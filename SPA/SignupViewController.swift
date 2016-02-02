@@ -201,10 +201,14 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldDidBeginEditing(textField: UITextField) {
-        animateViewMoving(true, moveValue: 100)
+        if textField.isEqual(confirmPassword){
+            animateViewMoving(true, moveValue: 75)
+        }
     }
     func textFieldDidEndEditing(textField: UITextField) {
-        animateViewMoving(false, moveValue: 100)
+        if textField.isEqual(confirmPassword){
+            animateViewMoving(false, moveValue: 75)
+        }
     }
     
     func animateViewMoving (up:Bool, moveValue :CGFloat){

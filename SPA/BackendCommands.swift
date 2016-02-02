@@ -8,25 +8,7 @@
 
 
 
-/* 
-How to signup
-
-func registerUserAsync() {
-
-let user = BackendlessUser()
-user.email = "james.bond@mi6.co.uk"
-user.password = "iAmWatchingU"
-
-backendless.userService.registering(user,
-response: { (registeredUser : BackendlessUser!) -> () in
-print("User has been registered (ASYNC): \(registeredUser)")
-},
-error: { ( fault : Fault!) -> () in
-print("Server reported an error: \(fault)")
-}
-)
-}
-
+/*
 
 How to create an order object and create the object in backendless
 
@@ -34,20 +16,26 @@ let order = Order()
 order.item = "Dilla"
 backendless.persistenceService.of(Order.ofClass()).save(order)
 
+How To get an object
 
-login function that will print the error
+func fetchingFirstPageAsync() {
 
-func loginUserAsync() {
-backendless.userService.login(
-"hockey7722@yahoo.com", password:"my_super_password",
-response: { (var registeredUser : BackendlessUser!) -> () in
-print("User has been logged in (ASYNC): \(registeredUser)")
-},
+
+backendless.persistenceService.of(Restaurant.ofClass()).find(
+BackendlessDataQuery(),
+response: { (var restaurants : BackendlessCollection!) -> () in
+var currentPage = restaurants.getCurrentPage()
+print("Loaded \(currentPage.count) restaurant objects")
+print("Total restaurants in the Backendless starage - \(restaurants.totalObjects)")
+
+for restaurant in currentPage {
+print("Restaurant name = \(restaurant.name)")
+}
 error: { (var fault : Fault!) -> () in
-print("Server reported an error: \(fault.detail)")
+println("Server reported an error: \(fault)")
+})
 }
-)
-}
+
 
 
 */

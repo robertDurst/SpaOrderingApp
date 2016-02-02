@@ -142,10 +142,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
     
     func textFieldDidBeginEditing(textField: UITextField) {
-        animateViewMoving(true, moveValue: 100)
+        animateViewMoving(true, moveValue: 110)
     }
     func textFieldDidEndEditing(textField: UITextField) {
-        animateViewMoving(false, moveValue: 100)
+        animateViewMoving(false, moveValue: 110)
     }
     
     func animateViewMoving (up:Bool, moveValue :CGFloat){

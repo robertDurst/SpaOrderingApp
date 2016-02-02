@@ -18,6 +18,7 @@
 		DC5322961C607F6D007049DC /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5322951C607F6D007049DC /* SignupViewController.swift */; };
 		DC5322981C607F93007049DC /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5322971C607F93007049DC /* MenuTableViewController.swift */; };
 		DC53229A1C608BA5007049DC /* JSSAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5322991C608BA5007049DC /* JSSAlertView.swift */; };
+		DC53229C1C613EE2007049DC /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53229B1C613EE2007049DC /* MenuTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		DC5322951C607F6D007049DC /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		DC5322971C607F93007049DC /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		DC5322991C608BA5007049DC /* JSSAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSSAlertView.swift; sourceTree = "<group>"; };
+		DC53229B1C613EE2007049DC /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				DC5322911C6066D9007049DC /* BackendCommands.swift */,
 				DC53228F1C605009007049DC /* order.swift */,
 				DC5322811C604BD4007049DC /* Main.storyboard */,
+				DC53229B1C613EE2007049DC /* MenuTableViewCell.swift */,
 				DC5322971C607F93007049DC /* MenuTableViewController.swift */,
 				DC5322841C604BD4007049DC /* Assets.xcassets */,
 				DC5322861C604BD4007049DC /* LaunchScreen.storyboard */,
@@ -228,6 +231,7 @@
 			files = (
 				DC5322901C605009007049DC /* order.swift in Sources */,
 				DC5322921C6066D9007049DC /* BackendCommands.swift in Sources */,
+				DC53229C1C613EE2007049DC /* MenuTableViewCell.swift in Sources */,
 				DC5322981C607F93007049DC /* MenuTableViewController.swift in Sources */,
 				DC5322961C607F6D007049DC /* SignupViewController.swift in Sources */,
 				DC5322941C606D5A007049DC /* LoginViewController.swift in Sources */,
