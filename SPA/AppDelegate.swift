@@ -10,14 +10,16 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    let APP_ID = "EEBDB8F4-E9E0-E117-FF51-3C7AA05AEF00"
+    let SECRET_KEY = "9532DE48-E9DB-4E23-FF92-C77E162E9C00"; let VERSION_NUM = "v1"
+    var backendless = Backendless.sharedInstance()
     var window: UIWindow?
-
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        backendless.initApp(APP_ID, secret:SECRET_KEY, version:VERSION_NUM) // if you don’t need the MediaService – you must remove the next line
+        backendless.mediaService = MediaService()
         return true
     }
+
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

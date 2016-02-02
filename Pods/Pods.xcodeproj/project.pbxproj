@@ -1,0 +1,1208 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		003894EB3D7B11EA7FD3A00FE840AD77 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13A8417F416E1613A26032A5A6D7F0E9 /* JSSAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24B71D6F4DF418D380D59512523FBF /* JSSAlertView.swift */; };
+		1577E53EC5208E8C7A61398BF611D6D1 /* TextFieldEffects-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 30303AB4542739FCB7554336EE9ECCB7 /* TextFieldEffects-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FF17B1BC989807DE22B0AA6203CB513 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */; };
+		483370A78239274968601096E3D1A8F6 /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B7482DE6810E6B23E47773013491BD /* JiroTextField.swift */; };
+		56F43E1769A4AFB8F32CB552121F03A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		5B013E2858C3A29B2CD6F93404027A45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		65FCF5D5E41106EDBCDE4DFA2D12CA52 /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C95600FD2C833A273A447E00BD77410 /* IsaoTextField.swift */; };
+		68DA15F89D601B46CE8D01411AB7755F /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0256D450674933FF3B561EE58760A853 /* YoshikoTextField.swift */; };
+		7425E8EA9C84F725D98E4381F2C4DFEA /* JSSAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5A7185EFB3AF9B6A48F0C0BF2AB712 /* JSSAlertView-dummy.m */; };
+		796F15C193F75C4910A2240FCCA30136 /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BCD8719375F305430F324DA5707569 /* KaedeTextField.swift */; };
+		7CB4A59A47D96DE60A9BF7BC406DA055 /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E8B846EACC329E151D04A7F8029E83 /* MinoruTextField.swift */; };
+		8B98FC34142CB8F476DBDEB74EBEF4C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		8D85BE3F94F1F7C5A9B70AFE29723E6E /* SwiftSpinner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 810F3F0421BEFBF51D2C5FAB51A231E4 /* SwiftSpinner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D010E176166D76B9F7290C003DBB57E /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC15B6BCB1CD79FB8C8EB76C6D2E937 /* YokoTextField.swift */; };
+		A06835C8E53757EFC7B5C3FF5D1CAC84 /* JSSAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 40455CA06C01D817F8137E996EED6110 /* JSSAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5A1E2FE55CC1F2D23A4B0A8D22D1166 /* TextFieldEffects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7289098B93846FF55E912356606225F1 /* TextFieldEffects-dummy.m */; };
+		A669D0EE7B9847E380B254ED9755B866 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F25723C78CFCA1EFEBFE3E54F6E2F78 /* HoshiTextField.swift */; };
+		B0F0622133FB97E87520FD669BF3A982 /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1622293389777580A6A9733C52AC7D6E /* MadokaTextField.swift */; };
+		BC29E6BE8EAACDA1266B276EFE12752C /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297C6AB2E925F4468E67BECB2C71F10 /* SwiftSpinner.swift */; };
+		BDFE9B2CC8C68826D63565BF23B49F94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		E1A96C22A5058DC29A67B7F66B907022 /* SwiftSpinner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C3C24C2D4C681A9E7DADF88BFA5AA9 /* SwiftSpinner-dummy.m */; };
+		E593E59B03939701D5BD7D2B442402AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */; };
+		F0BEA8935EF0C8F3F620B0FA4B1F6A04 /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83A8A1CE8CE336308928842C14B95E6 /* TextFieldsEffects.swift */; };
+		FCCD359F916BC487EF4D6980EE19D499 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4537ADB23EB81ACD777D78783F484234 /* AkiraTextField.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		506B4BC5B759F95FCBE85882CBEA0DB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72D57DED5129BDCAEB112D61B15B08A2;
+			remoteInfo = JSSAlertView;
+		};
+		5E7FF4A49041D794F3BEDFD10767C77B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99CB6069823F1D0CC00971CC4D7EBDDA;
+			remoteInfo = TextFieldEffects;
+		};
+		7FB552594A988E41E72D539066A93A34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAD0829DA2B94C414A049FD91E391BD0;
+			remoteInfo = SwiftSpinner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00A90AC9CB9E1B55BA3C8F0B4338F03C /* JSSAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JSSAlertView-prefix.pch"; sourceTree = "<group>"; };
+		00DBE20A07AB180FF013963EDEE3BA5E /* GeoPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GeoPoint.h; path = SDK/lib/backendless/include/GeoPoint.h; sourceTree = "<group>"; };
+		01714194AFA92432AB1742B0622E6C80 /* FlashorbBinaryReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlashorbBinaryReader.h; path = SDK/lib/CommLibiOS/include/FlashorbBinaryReader.h; sourceTree = "<group>"; };
+		0256D450674933FF3B561EE58760A853 /* YoshikoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoshikoTextField.swift; path = TextFieldEffects/TextFieldEffects/YoshikoTextField.swift; sourceTree = "<group>"; };
+		03BCB497F54D5E445D74F390D217F99B /* display.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = display.h; path = "SDK/lib/libav-11.4/include/libavutil/display.h"; sourceTree = "<group>"; };
+		043FA73A17D98C86D2885370E1F29A79 /* CacheFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CacheFactory.h; path = SDK/lib/backendless/include/CacheFactory.h; sourceTree = "<group>"; };
+		07940DCAE7C70D4330F994735623A08B /* dict.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dict.h; path = "SDK/lib/libav-11.4/include/libavutil/dict.h"; sourceTree = "<group>"; };
+		07D6CA92A682BBA7E21F1D6556139966 /* Backendless-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Backendless-Bridging-Header.h"; path = "SDK/lib/backendless/include/Backendless-Bridging-Header.h"; sourceTree = "<group>"; };
+		08267DC262ED4E736A8D234FEBCA0378 /* BETableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BETableView.h; path = SDK/lib/backendless/include/BETableView.h; sourceTree = "<group>"; };
+		08940F0E70535BCEA6D37CEACEC2C3F8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		097F82817C2BB462F070ACCF05ED2AD2 /* avconfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = avconfig.h; path = "SDK/lib/libav-11.4/include/libavutil/avconfig.h"; sourceTree = "<group>"; };
+		0A9C589E738B3DF052149B71E544F35A /* BEAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEAnnotation.h; path = SDK/lib/backendless/include/BEAnnotation.h; sourceTree = "<group>"; };
+		0AFB9D7000ECF25BDE11AF957490088F /* BackendlessBeacon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessBeacon.h; path = SDK/lib/backendless/include/BackendlessBeacon.h; sourceTree = "<group>"; };
+		0BA7C115EE1DB7CC33AB643D6E316DD1 /* TextFieldEffects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TextFieldEffects.modulemap; sourceTree = "<group>"; };
+		0BBE89D2655A08437558989F4C37A9C1 /* IPersistable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IPersistable.h; path = SDK/lib/CommLibiOS/include/IPersistable.h; sourceTree = "<group>"; };
+		0C63CD60DACF48A32241C500FD9E9E8E /* audioconvert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = audioconvert.h; path = "SDK/lib/libav-11.4/include/libavutil/audioconvert.h"; sourceTree = "<group>"; };
+		0C95600FD2C833A273A447E00BD77410 /* IsaoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IsaoTextField.swift; path = TextFieldEffects/TextFieldEffects/IsaoTextField.swift; sourceTree = "<group>"; };
+		0D072D4D637F1DEB21B0794EF4381BF1 /* Backendless-With-Media-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Backendless-With-Media-Bridging-Header.h"; path = "SDK/lib/backendless/include/Backendless-With-Media-Bridging-Header.h"; sourceTree = "<group>"; };
+		0D9658ECFD0A6FDEED17EC60A097190C /* VideoPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VideoPlayer.h; path = SDK/lib/MediaLibiOS3x/include/VideoPlayer.h; sourceTree = "<group>"; };
+		0D9F208DF43E4FF92F7A0189BF2142AB /* JSSAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSSAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E36AA2EF6428AC5B6AD9732213B54B6 /* BackendlessUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessUser.h; path = SDK/lib/backendless/include/BackendlessUser.h; sourceTree = "<group>"; };
+		0EC15B6BCB1CD79FB8C8EB76C6D2E937 /* YokoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YokoTextField.swift; path = TextFieldEffects/TextFieldEffects/YokoTextField.swift; sourceTree = "<group>"; };
+		101FC1E47180888F62BEC410CBD1F6AF /* IDataStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IDataStore.h; path = SDK/lib/backendless/include/IDataStore.h; sourceTree = "<group>"; };
+		12D81D4C4BD977493F7266BE843562E6 /* MediaPublisher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MediaPublisher.h; path = SDK/lib/backendless/include/MediaPublisher.h; sourceTree = "<group>"; };
+		1402F3706498E7EA5DAE55CD5B12F0AD /* bswap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bswap.h; path = "SDK/lib/libav-11.4/include/libavutil/bswap.h"; sourceTree = "<group>"; };
+		146EDB02E37F1938EE5A5A3C80B930F9 /* replaygain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = replaygain.h; path = "SDK/lib/libav-11.4/include/libavutil/replaygain.h"; sourceTree = "<group>"; };
+		14C8448EA5063E85E82D1CE35D8318F9 /* avdevice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = avdevice.h; path = "SDK/lib/libav-11.4/include/libavdevice/avdevice.h"; sourceTree = "<group>"; };
+		14E479BEB8E52B25E217473408C2B44D /* BECollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BECollectionView.h; path = SDK/lib/backendless/include/BECollectionView.h; sourceTree = "<group>"; };
+		159A98925D7EE1D0C7F7F5356AD5E51B /* SwiftSpinner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftSpinner.modulemap; sourceTree = "<group>"; };
+		1622293389777580A6A9733C52AC7D6E /* MadokaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MadokaTextField.swift; path = TextFieldEffects/TextFieldEffects/MadokaTextField.swift; sourceTree = "<group>"; };
+		1903ACE30099A5CFDBB006011639DCC0 /* CustomService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CustomService.h; path = SDK/lib/backendless/include/CustomService.h; sourceTree = "<group>"; };
+		1A19CB07B8A40D872E651B0176ED5913 /* IRTMProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IRTMProtocol.h; path = SDK/lib/CommLibiOS/include/IRTMProtocol.h; sourceTree = "<group>"; };
+		1F25723C78CFCA1EFEBFE3E54F6E2F78 /* HoshiTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HoshiTextField.swift; path = TextFieldEffects/TextFieldEffects/HoshiTextField.swift; sourceTree = "<group>"; };
+		2093A23324C9767463364C8CDD2B4BC7 /* fifo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fifo.h; path = "SDK/lib/libav-11.4/include/libavutil/fifo.h"; sourceTree = "<group>"; };
+		20BB16908A1F029B334956E35A95EAD2 /* JSSAlertView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JSSAlertView.xcconfig; sourceTree = "<group>"; };
+		225E9A7479FFC7C1AB8B60F14484F12D /* GeoService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GeoService.h; path = SDK/lib/backendless/include/GeoService.h; sourceTree = "<group>"; };
+		228CFDF832BFE4D353E4C50CB6666218 /* Logger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Logger.h; path = SDK/lib/backendless/include/Logger.h; sourceTree = "<group>"; };
+		2297C6AB2E925F4468E67BECB2C71F10 /* SwiftSpinner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSpinner.swift; path = SwiftSpinner/SwiftSpinner.swift; sourceTree = "<group>"; };
+		23699CE8EB565FC32C43A3532BBE5934 /* version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = version.h; path = "SDK/lib/libav-11.4/include/libavresample/version.h"; sourceTree = "<group>"; };
+		2540DD41C333C8A16FD44448082FA4D5 /* TextFieldEffects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TextFieldEffects.xcconfig; sourceTree = "<group>"; };
+		2595C3E3F4761CA17E6E6B171203BCFF /* buffersink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = buffersink.h; path = "SDK/lib/libav-11.4/include/libavfilter/buffersink.h"; sourceTree = "<group>"; };
+		266A4AC9156357496C3748F5ED98F2C2 /* IAtomicCounters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IAtomicCounters.h; path = SDK/lib/backendless/include/IAtomicCounters.h; sourceTree = "<group>"; };
+		26ED7FFDB0309C07D2C7672A537315E7 /* file.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = file.h; path = "SDK/lib/libav-11.4/include/libavutil/file.h"; sourceTree = "<group>"; };
+		270AE1571BC4CF1B1EDD4B5C20AFA520 /* BackendlessCacheProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessCacheProtocol.h; path = SDK/lib/backendless/include/BackendlessCacheProtocol.h; sourceTree = "<group>"; };
+		281C7EA3413B638D6A2796EF40961829 /* sha.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha.h; path = "SDK/lib/libav-11.4/include/libavutil/sha.h"; sourceTree = "<group>"; };
+		28D91DB3E5140E5473DD03DF7E7F68B7 /* BinaryStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BinaryStream.h; path = SDK/lib/CommLibiOS/include/BinaryStream.h; sourceTree = "<group>"; };
+		2A17E37010B2F8A50413FDC3676D0641 /* opt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opt.h; path = "SDK/lib/libav-11.4/include/libavutil/opt.h"; sourceTree = "<group>"; };
+		2BA9756EB70BB58C299CC91FE5C7FC0D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		2BD41C29CC01DD6893853D292CB3C671 /* cpu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cpu.h; path = "SDK/lib/libav-11.4/include/libavutil/cpu.h"; sourceTree = "<group>"; };
+		2BE7A1310FF5FD523E3A18FD874053FD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CC0D762EAF355E76D11FBB2CE318CDA /* avutil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = avutil.h; path = "SDK/lib/libav-11.4/include/libavutil/avutil.h"; sourceTree = "<group>"; };
+		2E56800B89A361B96A4BF955C62B53DC /* AtomicCountersFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AtomicCountersFactory.h; path = SDK/lib/backendless/include/AtomicCountersFactory.h; sourceTree = "<group>"; };
+		30303AB4542739FCB7554336EE9ECCB7 /* TextFieldEffects-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-umbrella.h"; sourceTree = "<group>"; };
+		311ABA2FABBCA1E32EBE14C541E4F170 /* vda.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = vda.h; path = "SDK/lib/libav-11.4/include/libavcodec/vda.h"; sourceTree = "<group>"; };
+		33ACE9256ADC9DBCE16FE30C4306C7C8 /* TextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33E8B846EACC329E151D04A7F8029E83 /* MinoruTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinoruTextField.swift; path = TextFieldEffects/TextFieldEffects/MinoruTextField.swift; sourceTree = "<group>"; };
+		34528C63E0D572A5638016B3F7A43907 /* CacheService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CacheService.h; path = SDK/lib/backendless/include/CacheService.h; sourceTree = "<group>"; };
+		35343767BF524D15463573B8E045A561 /* BroadcastStreamClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BroadcastStreamClient.h; path = SDK/lib/MediaLibiOS3x/include/BroadcastStreamClient.h; sourceTree = "<group>"; };
+		37BC714A1789C9AFB8020F8145334147 /* MessageStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MessageStatus.h; path = SDK/lib/backendless/include/MessageStatus.h; sourceTree = "<group>"; };
+		3AA1EE8FBDD6FC79825EF278E9A2CE37 /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = "SDK/lib/libav-11.4/include/libavutil/hmac.h"; sourceTree = "<group>"; };
+		3C33C25FF89A838F6547E424F2F0F6F5 /* ObjectProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ObjectProperty.h; path = SDK/lib/backendless/include/ObjectProperty.h; sourceTree = "<group>"; };
+		3CB4B18E347FBFC195B991DE00A39E2C /* Logging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Logging.h; path = SDK/lib/backendless/include/Logging.h; sourceTree = "<group>"; };
+		40455CA06C01D817F8137E996EED6110 /* JSSAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JSSAlertView-umbrella.h"; sourceTree = "<group>"; };
+		407E0BF8586A73293C400F263417914A /* FlashorbBinaryWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlashorbBinaryWriter.h; path = SDK/lib/CommLibiOS/include/FlashorbBinaryWriter.h; sourceTree = "<group>"; };
+		4090AE68BEE88387AC563462F6167E56 /* AMFSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMFSerializer.h; path = SDK/lib/CommLibiOS/include/AMFSerializer.h; sourceTree = "<group>"; };
+		43886B5B873B4BC11CF66F8F513364C7 /* MemoryTicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MemoryTicker.h; path = SDK/lib/CommLibiOS/include/MemoryTicker.h; sourceTree = "<group>"; };
+		4444DC91CD4E1AC66376A94A9E2CE9C1 /* FilePermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FilePermission.h; path = SDK/lib/backendless/include/FilePermission.h; sourceTree = "<group>"; };
+		4537ADB23EB81ACD777D78783F484234 /* AkiraTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = TextFieldEffects/TextFieldEffects/AkiraTextField.swift; sourceTree = "<group>"; };
+		4550B72986BF120539D61BCD84292741 /* avassert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = avassert.h; path = "SDK/lib/libav-11.4/include/libavutil/avassert.h"; sourceTree = "<group>"; };
+		4553D090FCC2F868A7D97C01DED7D995 /* avfiltergraph.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = avfiltergraph.h; path = "SDK/lib/libav-11.4/include/libavfilter/avfiltergraph.h"; sourceTree = "<group>"; };
+		457C8C65D82A91695A69EAC9ECF20E79 /* time.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = time.h; path = "SDK/lib/libav-11.4/include/libavutil/time.h"; sourceTree = "<group>"; };
+		49B7482DE6810E6B23E47773013491BD /* JiroTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JiroTextField.swift; path = TextFieldEffects/TextFieldEffects/JiroTextField.swift; sourceTree = "<group>"; };
+		4AA3D673C617DBCF70F0FAF7A3481707 /* downmix_info.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = downmix_info.h; path = "SDK/lib/libav-11.4/include/libavutil/downmix_info.h"; sourceTree = "<group>"; };
+		4CB2047C75B6F46F62875C6FE8135BCB /* random_seed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = random_seed.h; path = "SDK/lib/libav-11.4/include/libavutil/random_seed.h"; sourceTree = "<group>"; };
+		4E1AB7C0C853A228B064C8290C5961E1 /* version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = version.h; path = "SDK/lib/libav-11.4/include/libavfilter/version.h"; sourceTree = "<group>"; };
+		4ED9CE254DB007E79DFDEB7CF639B60D /* audio_fifo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = audio_fifo.h; path = "SDK/lib/libav-11.4/include/libavutil/audio_fifo.h"; sourceTree = "<group>"; };
+		54E385D03773B14D7F56054771116AAE /* FileService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FileService.h; path = SDK/lib/backendless/include/FileService.h; sourceTree = "<group>"; };
+		5695686E093AA1D9343D663BEB43C8F6 /* imgutils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = imgutils.h; path = "SDK/lib/libav-11.4/include/libavutil/imgutils.h"; sourceTree = "<group>"; };
+		57C2FBD58427608B70021DA2796B4CEE /* xtea.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xtea.h; path = "SDK/lib/libav-11.4/include/libavutil/xtea.h"; sourceTree = "<group>"; };
+		57DDA1004BA315C3169374D212026266 /* MPMediaData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPMediaData.h; path = SDK/lib/MediaLibiOS3x/include/MPMediaData.h; sourceTree = "<group>"; };
+		5B27FF8B529831382D93C2FD01AFAFB1 /* version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = version.h; path = "SDK/lib/libav-11.4/include/libavcodec/version.h"; sourceTree = "<group>"; };
+		5B6D6EFA40D143670D0A957532AEF857 /* md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md5.h; path = "SDK/lib/libav-11.4/include/libavutil/md5.h"; sourceTree = "<group>"; };
+		5D06DDD7018583741C7C5EEF98D9E97C /* MPMediaDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPMediaDecoder.h; path = SDK/lib/MediaLibiOS3x/include/MPMediaDecoder.h; sourceTree = "<group>"; };
+		5EA1E9C637D774EF021F39A83FB10F9D /* RTMPClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTMPClient.h; path = SDK/lib/CommLibiOS/include/RTMPClient.h; sourceTree = "<group>"; };
+		5F08012090A9D8CC7B7A1D5ABD2E1EC4 /* stereo3d.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stereo3d.h; path = "SDK/lib/libav-11.4/include/libavutil/stereo3d.h"; sourceTree = "<group>"; };
+		5F9D389D58FF64E269B3595A13B103F8 /* common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = common.h; path = "SDK/lib/libav-11.4/include/libavutil/common.h"; sourceTree = "<group>"; };
+		60091ED98E20D3467FE95D9A24227167 /* macros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = macros.h; path = "SDK/lib/libav-11.4/include/libavutil/macros.h"; sourceTree = "<group>"; };
+		63F703330C50BFAC40F39E84C70D4AF8 /* attributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = attributes.h; path = "SDK/lib/libav-11.4/include/libavutil/attributes.h"; sourceTree = "<group>"; };
+		64AE053FC08F8E280DAC8778A271E1A4 /* ISharedObjectListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISharedObjectListener.h; path = SDK/lib/CommLibiOS/include/ISharedObjectListener.h; sourceTree = "<group>"; };
+		65ACB1FD2975B6C70CBF5CDFAA882D3C /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes.h; path = "SDK/lib/libav-11.4/include/libavutil/aes.h"; sourceTree = "<group>"; };
+		6696407938976DFA9FBB6DDF1B835456 /* BinaryCodec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BinaryCodec.h; path = SDK/lib/CommLibiOS/include/BinaryCodec.h; sourceTree = "<group>"; };
+		6836D9F26DBC15452675867AE4AB616E /* parseutils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = parseutils.h; path = "SDK/lib/libav-11.4/include/libavutil/parseutils.h"; sourceTree = "<group>"; };
+		69B2189685128D66016F99E05AC77746 /* IAttributeStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IAttributeStore.h; path = SDK/lib/CommLibiOS/include/IAttributeStore.h; sourceTree = "<group>"; };
+		6A73ABBAE6E4569FE25986BEB6FD2F29 /* DeliveryOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DeliveryOptions.h; path = SDK/lib/backendless/include/DeliveryOptions.h; sourceTree = "<group>"; };
+		6B7CAE89A704517B6413E624944ECA30 /* avio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = avio.h; path = "SDK/lib/libav-11.4/include/libavformat/avio.h"; sourceTree = "<group>"; };
+		6C1F3681125A0B5C1DFF8F4D10ACA25F /* speex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = speex.h; path = "SDK/lib/speex-1.2rc2/include/speex.h"; sourceTree = "<group>"; };
+		6C8CD61599F4BCB5FD7B6062B463CBD7 /* SwiftSpinner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSpinner.xcconfig; sourceTree = "<group>"; };
+		6DCAA2ED1F13F507469229C8024AEB41 /* speex_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = speex_types.h; path = "SDK/lib/speex-1.2rc2/include/speex_types.h"; sourceTree = "<group>"; };
+		6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6EF5B9EAECDF0F53C6274711F4EE4010 /* lfg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lfg.h; path = "SDK/lib/libav-11.4/include/libavutil/lfg.h"; sourceTree = "<group>"; };
+		6FD6CD4273B9A17A6CE2B5A9F3BF1429 /* IServiceCall.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IServiceCall.h; path = SDK/lib/CommLibiOS/include/IServiceCall.h; sourceTree = "<group>"; };
+		723C9AA3DC684E94C5B6094FECA7EFCB /* MediaPlaybackOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MediaPlaybackOptions.h; path = SDK/lib/backendless/include/MediaPlaybackOptions.h; sourceTree = "<group>"; };
+		7289098B93846FF55E912356606225F1 /* TextFieldEffects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TextFieldEffects-dummy.m"; sourceTree = "<group>"; };
+		7358EC40885C2C86EF39FD08CF3D4892 /* avresample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = avresample.h; path = "SDK/lib/libav-11.4/include/libavresample/avresample.h"; sourceTree = "<group>"; };
+		73D79BE1186AE1CF57C6F76F2EA67F8F /* avstring.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = avstring.h; path = "SDK/lib/libav-11.4/include/libavutil/avstring.h"; sourceTree = "<group>"; };
+		7425430CB325BA1115CCF177AC33B6C1 /* BackendlessCachePolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessCachePolicy.h; path = SDK/lib/backendless/include/BackendlessCachePolicy.h; sourceTree = "<group>"; };
+		758E299CAE4B15EE093754368ED3F1CE /* speex_bits.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = speex_bits.h; path = "SDK/lib/speex-1.2rc2/include/speex_bits.h"; sourceTree = "<group>"; };
+		76C72B97105A983AECFA4DFB2EC3491C /* x264_config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x264_config.h; path = SDK/lib/x264/include/x264_config.h; sourceTree = "<group>"; };
+		7818E7BCEB8FEFB755A064B0BA749897 /* mem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mem.h; path = "SDK/lib/libav-11.4/include/libavutil/mem.h"; sourceTree = "<group>"; };
+		797B9E3C6657B4D18DF484022D404EA5 /* swscale.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = swscale.h; path = "SDK/lib/libav-11.4/include/libswscale/swscale.h"; sourceTree = "<group>"; };
+		79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
+		79DDEE5D6D755B909F501EE9344F2490 /* IPendingServiceCallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IPendingServiceCallback.h; path = SDK/lib/CommLibiOS/include/IPendingServiceCallback.h; sourceTree = "<group>"; };
+		7C0B5874E78885ED371DEF59658A9C9E /* GeoFence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GeoFence.h; path = SDK/lib/backendless/include/GeoFence.h; sourceTree = "<group>"; };
+		7C3A68FAAF79710B0A80A41F9BD2005A /* BEMapView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMapView.h; path = SDK/lib/backendless/include/BEMapView.h; sourceTree = "<group>"; };
+		7F1B7D3B6933B3BD67DE356E993EA63F /* Presence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Presence.h; path = SDK/lib/backendless/include/Presence.h; sourceTree = "<group>"; };
+		8059FD439C6AA1180AB07EB61BDA2547 /* buffersrc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = buffersrc.h; path = "SDK/lib/libav-11.4/include/libavfilter/buffersrc.h"; sourceTree = "<group>"; };
+		810F3F0421BEFBF51D2C5FAB51A231E4 /* SwiftSpinner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSpinner-umbrella.h"; sourceTree = "<group>"; };
+		82B95BEFAA02C14C62176FCE3A49F3C2 /* PublishOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PublishOptions.h; path = SDK/lib/backendless/include/PublishOptions.h; sourceTree = "<group>"; };
+		8397530C010A6CD139EF37D923709B6A /* dxva2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dxva2.h; path = "SDK/lib/libav-11.4/include/libavcodec/dxva2.h"; sourceTree = "<group>"; };
+		83C99E3B5F40B2632FBF983DF7AE8E50 /* BackendlessCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessCollection.h; path = SDK/lib/backendless/include/BackendlessCollection.h; sourceTree = "<group>"; };
+		851F5D92A6017B42C5631897973A8E8F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85878FC0846C8EAE8FF51D75C529199E /* BackendlessGeoQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessGeoQuery.h; path = SDK/lib/backendless/include/BackendlessGeoQuery.h; sourceTree = "<group>"; };
+		8592667D4CA029BC74A91C8DE970ED6B /* Message.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Message.h; path = SDK/lib/backendless/include/Message.h; sourceTree = "<group>"; };
+		87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		88D80A87B0AADEC921D8E39850CD5A54 /* version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = version.h; path = "SDK/lib/libav-11.4/include/libswscale/version.h"; sourceTree = "<group>"; };
+		894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		8BF32E20D3BC02C1D8513B93BA7DED77 /* ICacheService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ICacheService.h; path = SDK/lib/backendless/include/ICacheService.h; sourceTree = "<group>"; };
+		8E5BC41C0F06A5BB3CB7FAEC8206DD4C /* buffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = buffer.h; path = "SDK/lib/libav-11.4/include/libavutil/buffer.h"; sourceTree = "<group>"; };
+		8EB497426C44ADB6C5E79B8DD0D1D8AA /* IMediaStreamer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IMediaStreamer.h; path = SDK/lib/backendless/include/IMediaStreamer.h; sourceTree = "<group>"; };
+		9079AA1F4BC010890643D885FA577A46 /* BackendlessEntity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessEntity.h; path = SDK/lib/backendless/include/BackendlessEntity.h; sourceTree = "<group>"; };
+		9079C6667C9D9FF5FDA1C0CCA483F0F5 /* GeoCluster.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GeoCluster.h; path = SDK/lib/backendless/include/GeoCluster.h; sourceTree = "<group>"; };
+		909467D97E9078C9478B04AC65FC6631 /* channel_layout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = channel_layout.h; path = "SDK/lib/libav-11.4/include/libavutil/channel_layout.h"; sourceTree = "<group>"; };
+		939BA50458FC6F577DB0DD07DFEB2C95 /* IClientSharedObjectDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IClientSharedObjectDelegate.h; path = SDK/lib/CommLibiOS/include/IClientSharedObjectDelegate.h; sourceTree = "<group>"; };
+		977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		993E129ADE2867DA3A8502677EE15103 /* dv_profile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dv_profile.h; path = "SDK/lib/libav-11.4/include/libavcodec/dv_profile.h"; sourceTree = "<group>"; };
+		9CFBD6992C09DBD46D7DB62C8D357ECA /* SubscriptionOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SubscriptionOptions.h; path = SDK/lib/backendless/include/SubscriptionOptions.h; sourceTree = "<group>"; };
+		9D54013917EBCCB6110EF445E20F4F52 /* samplefmt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = samplefmt.h; path = "SDK/lib/libav-11.4/include/libavutil/samplefmt.h"; sourceTree = "<group>"; };
+		9F47BAC49EE10940B060F1BA9D11FCF7 /* DEBUG.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DEBUG.h; path = SDK/lib/CommLibiOS/include/DEBUG.h; sourceTree = "<group>"; };
+		A018BD2182CBAB56689E7FF68D24E527 /* speex_header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = speex_header.h; path = "SDK/lib/speex-1.2rc2/include/speex_header.h"; sourceTree = "<group>"; };
+		A2E0FD05A4B02921B3E15045AC0531CE /* MediaStreamPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MediaStreamPlayer.h; path = SDK/lib/MediaLibiOS3x/include/MediaStreamPlayer.h; sourceTree = "<group>"; };
+		A412FD5B4484527EAC6602BDAC2BE251 /* ProtectedBackendlessGeoQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ProtectedBackendlessGeoQuery.h; path = SDK/lib/backendless/include/ProtectedBackendlessGeoQuery.h; sourceTree = "<group>"; };
+		A4F2E94625F4601E259FBAA01054F351 /* Responder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Responder.h; path = SDK/lib/CommLibiOS/include/Responder.h; sourceTree = "<group>"; };
+		A5A8AB2550A992962FDDCCE7A5CA3505 /* rational.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rational.h; path = "SDK/lib/libav-11.4/include/libavutil/rational.h"; sourceTree = "<group>"; };
+		A6D587D27CAB24B612189BB42195F2EA /* MediaPublishOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MediaPublishOptions.h; path = SDK/lib/backendless/include/MediaPublishOptions.h; sourceTree = "<group>"; };
+		A7F7EA6347BF001CDC03145B8FAFBF28 /* BEFileInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEFileInfo.h; path = SDK/lib/backendless/include/BEFileInfo.h; sourceTree = "<group>"; };
+		A8C281E79DABB7F72AA4EEDCEB17DE82 /* frame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = frame.h; path = "SDK/lib/libav-11.4/include/libavutil/frame.h"; sourceTree = "<group>"; };
+		A8EFCED669670160D17E745744B88577 /* error.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = error.h; path = "SDK/lib/libav-11.4/include/libavutil/error.h"; sourceTree = "<group>"; };
+		AC9AC910BB1AC08DB4F21F8CE29DA12D /* vaapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = vaapi.h; path = "SDK/lib/libav-11.4/include/libavcodec/vaapi.h"; sourceTree = "<group>"; };
+		AE8523D87DADED5CFCDCDCD78C8208FE /* Events.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Events.h; path = SDK/lib/backendless/include/Events.h; sourceTree = "<group>"; };
+		B02A78A6D8B7A32A463A5CB1150DFCD5 /* intfloat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = intfloat.h; path = "SDK/lib/libav-11.4/include/libavutil/intfloat.h"; sourceTree = "<group>"; };
+		B0CC6FC212AF4D619B4AED0B21F497EF /* version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = version.h; path = "SDK/lib/libav-11.4/include/libavutil/version.h"; sourceTree = "<group>"; };
+		B3AF782691C93294D59070D2CF3D9BEA /* HashMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HashMap.h; path = SDK/lib/backendless/include/HashMap.h; sourceTree = "<group>"; };
+		B52AA3F35F9D0411FC2E20B27F58A002 /* eval.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = eval.h; path = "SDK/lib/libav-11.4/include/libavutil/eval.h"; sourceTree = "<group>"; };
+		B566A62B413523DD9616FFBC9785B533 /* log.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = log.h; path = "SDK/lib/libav-11.4/include/libavutil/log.h"; sourceTree = "<group>"; };
+		B5EA9340AD4C07A29569FE15295F5583 /* pixfmt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pixfmt.h; path = "SDK/lib/libav-11.4/include/libavutil/pixfmt.h"; sourceTree = "<group>"; };
+		B7B183EFDAF6C4303049B301C2F6FD05 /* DataStoreFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DataStoreFactory.h; path = SDK/lib/backendless/include/DataStoreFactory.h; sourceTree = "<group>"; };
+		B96670559E30DED0EE5606CF8EB82516 /* MPMediaEncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MPMediaEncoder.h; path = SDK/lib/MediaLibiOS3x/include/MPMediaEncoder.h; sourceTree = "<group>"; };
+		B9DC826892A3F5E55AFB84E9C44D8793 /* IClientSharedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IClientSharedObject.h; path = SDK/lib/CommLibiOS/include/IClientSharedObject.h; sourceTree = "<group>"; };
+		B9FB1FC1CEBA1758C1847DD2C465C057 /* DataPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DataPermission.h; path = SDK/lib/backendless/include/DataPermission.h; sourceTree = "<group>"; };
+		BA38C7F9EE9D5D0EFCA8569F6AE3CC77 /* SwiftSpinner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftSpinner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BA9F6CDFD59B65344B0BC9F0858433AE /* x264.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x264.h; path = SDK/lib/x264/include/x264.h; sourceTree = "<group>"; };
+		BAEAA1144001D8C618D9B5097C14A3CB /* AbstractProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AbstractProperty.h; path = SDK/lib/backendless/include/AbstractProperty.h; sourceTree = "<group>"; };
+		C04134BA2F778C857E447E80F6396DE9 /* avfilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = avfilter.h; path = "SDK/lib/libav-11.4/include/libavfilter/avfilter.h"; sourceTree = "<group>"; };
+		C09CB30C9C94E488FF552297D0102BE5 /* adler32.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = adler32.h; path = "SDK/lib/libav-11.4/include/libavutil/adler32.h"; sourceTree = "<group>"; };
+		C1855B4B1D5A3D44BB693F8CA71EB765 /* LocationTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LocationTracker.h; path = SDK/lib/backendless/include/LocationTracker.h; sourceTree = "<group>"; };
+		C20F9617ECB8B3825D9E960F3630665E /* version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = version.h; path = "SDK/lib/libav-11.4/include/libavformat/version.h"; sourceTree = "<group>"; };
+		C347801955972524AD607B3941049EE6 /* avcodec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = avcodec.h; path = "SDK/lib/libav-11.4/include/libavcodec/avcodec.h"; sourceTree = "<group>"; };
+		C3B69F4328B8E324F3E6F6E73C3C0F54 /* AtomicCounters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AtomicCounters.h; path = SDK/lib/backendless/include/AtomicCounters.h; sourceTree = "<group>"; };
+		C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C3C5DED4E4AA0CF30CFF9B5A2A1DBFAC /* MediaPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MediaPlayer.h; path = SDK/lib/backendless/include/MediaPlayer.h; sourceTree = "<group>"; };
+		C84C23F1879A243E871AA4BBDC348E79 /* version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = version.h; path = "SDK/lib/libav-11.4/include/libavdevice/version.h"; sourceTree = "<group>"; };
+		C8BCD8719375F305430F324DA5707569 /* KaedeTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaedeTextField.swift; path = TextFieldEffects/TextFieldEffects/KaedeTextField.swift; sourceTree = "<group>"; };
+		CA4CFEDC9DD9EED9000D7E5C91C62A62 /* MediaService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MediaService.h; path = SDK/lib/backendless/include/MediaService.h; sourceTree = "<group>"; };
+		CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		CE9AEDB7D1388D39875E2D4C320DB39F /* AbstractQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AbstractQuery.h; path = SDK/lib/backendless/include/AbstractQuery.h; sourceTree = "<group>"; };
+		CEC7A0ACF91F89FBD85C82A01C6345CE /* base64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = base64.h; path = "SDK/lib/libav-11.4/include/libavutil/base64.h"; sourceTree = "<group>"; };
+		CF173E1B7CB2A8E5DAF8E69D5711FB73 /* SwiftSpinner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSpinner-prefix.pch"; sourceTree = "<group>"; };
+		CFD1CD14A349FC52FD8FB69FB08FB766 /* BackendlessSimpleQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessSimpleQuery.h; path = SDK/lib/backendless/include/BackendlessSimpleQuery.h; sourceTree = "<group>"; };
+		D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D0B48C29BA9146B842EA62EAB811FCCD /* speex_config_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = speex_config_types.h; path = "SDK/lib/speex-1.2rc2/include/speex_config_types.h"; sourceTree = "<group>"; };
+		D16EC080256DE6A84B5C211946ED3A79 /* MessagingService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MessagingService.h; path = SDK/lib/backendless/include/MessagingService.h; sourceTree = "<group>"; };
+		D359BC85C8B0811C1B320E5FE67194F0 /* crc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crc.h; path = "SDK/lib/libav-11.4/include/libavutil/crc.h"; sourceTree = "<group>"; };
+		D43E19CB67FB37F501EBD96954EE453D /* PersistenceService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PersistenceService.h; path = SDK/lib/backendless/include/PersistenceService.h; sourceTree = "<group>"; };
+		D671A286316A5DFC7B30FB7A0B703D7A /* speex_stereo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = speex_stereo.h; path = "SDK/lib/speex-1.2rc2/include/speex_stereo.h"; sourceTree = "<group>"; };
+		D83A8A1CE8CE336308928842C14B95E6 /* TextFieldsEffects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldsEffects.swift; path = TextFieldEffects/TextFieldEffects/TextFieldsEffects.swift; sourceTree = "<group>"; };
+		DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		DA5F7142BD9EEF24099CD584E2F39329 /* old_pix_fmts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = old_pix_fmts.h; path = "SDK/lib/libav-11.4/include/libavutil/old_pix_fmts.h"; sourceTree = "<group>"; };
+		DAA34833F56AEF35DAD6305FDDB416C8 /* ICallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ICallback.h; path = SDK/lib/backendless/include/ICallback.h; sourceTree = "<group>"; };
+		DBCAF4F9DA1625BC03A46E130169FB68 /* Types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Types.h; path = SDK/lib/CommLibiOS/include/Types.h; sourceTree = "<group>"; };
+		DD60B53D0391572B110695773EDE5BB2 /* DeviceRegistration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DeviceRegistration.h; path = SDK/lib/backendless/include/DeviceRegistration.h; sourceTree = "<group>"; };
+		DF1D8CD913439A04BB7E2645A8E08847 /* JSSAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JSSAlertView.modulemap; sourceTree = "<group>"; };
+		DFB30684167343593710E679941EEF0C /* IPresenceListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IPresenceListener.h; path = SDK/lib/backendless/include/IPresenceListener.h; sourceTree = "<group>"; };
+		E273C09F352A00F4A364ADA1427224C7 /* blowfish.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = blowfish.h; path = "SDK/lib/libav-11.4/include/libavutil/blowfish.h"; sourceTree = "<group>"; };
+		E2C3C24C2D4C681A9E7DADF88BFA5AA9 /* SwiftSpinner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSpinner-dummy.m"; sourceTree = "<group>"; };
+		E47B31683036299F9CC2278BC52939F5 /* speex_callbacks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = speex_callbacks.h; path = "SDK/lib/speex-1.2rc2/include/speex_callbacks.h"; sourceTree = "<group>"; };
+		E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8B0A25BE8F4F99E871C90B3EA1179AC /* QueryOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QueryOptions.h; path = SDK/lib/backendless/include/QueryOptions.h; sourceTree = "<group>"; };
+		E9D3024082B035155F0C3EEDD613E62D /* avformat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = avformat.h; path = "SDK/lib/libav-11.4/include/libavformat/avformat.h"; sourceTree = "<group>"; };
+		EB268CEDACF3D0E8AE8ACB1B2F3BA191 /* GeoCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GeoCategory.h; path = SDK/lib/backendless/include/GeoCategory.h; sourceTree = "<group>"; };
+		EB4D2D925CCA010211BB3097CE962C4D /* intreadwrite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = intreadwrite.h; path = "SDK/lib/libav-11.4/include/libavutil/intreadwrite.h"; sourceTree = "<group>"; };
+		EB9C5DBD7A4C341777B99FF9316F9174 /* BackendlessFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessFile.h; path = SDK/lib/backendless/include/BackendlessFile.h; sourceTree = "<group>"; };
+		ECC4DEBA8D1CE666642F234C9DD200EC /* UserService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UserService.h; path = SDK/lib/backendless/include/UserService.h; sourceTree = "<group>"; };
+		EF905A9BB46ED3E9430978239D987013 /* UserProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UserProperty.h; path = SDK/lib/backendless/include/UserProperty.h; sourceTree = "<group>"; };
+		F19FB20B7A604CC39F5D2C4FE99FE8F1 /* pixdesc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pixdesc.h; path = "SDK/lib/libav-11.4/include/libavutil/pixdesc.h"; sourceTree = "<group>"; };
+		F271049EE3CB68BC57499B66A7905CD8 /* BackendlessDataQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessDataQuery.h; path = SDK/lib/backendless/include/BackendlessDataQuery.h; sourceTree = "<group>"; };
+		F4E3F9DB5B911CE428782B18BCC0D8B0 /* avfft.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = avfft.h; path = "SDK/lib/libav-11.4/include/libavcodec/avfft.h"; sourceTree = "<group>"; };
+		F5D1B63AF3F0C9C4803A2321B7341084 /* TextFieldEffects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-prefix.pch"; sourceTree = "<group>"; };
+		F5E3C23C4B4DCBD3AC23071016EBDCAF /* BESubscription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BESubscription.h; path = SDK/lib/backendless/include/BESubscription.h; sourceTree = "<group>"; };
+		F68034D4A69D25712CE053F289668E3F /* WeborbClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WeborbClient.h; path = SDK/lib/CommLibiOS/include/WeborbClient.h; sourceTree = "<group>"; };
+		F85386E1B2CBF242EEF9F31C35470FFB /* vdpau.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = vdpau.h; path = "SDK/lib/libav-11.4/include/libavcodec/vdpau.h"; sourceTree = "<group>"; };
+		FA2E83B9EFDC5E1E96A87758CB69647D /* Backendless.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Backendless.h; path = SDK/lib/backendless/include/Backendless.h; sourceTree = "<group>"; };
+		FD5A7185EFB3AF9B6A48F0C0BF2AB712 /* JSSAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JSSAlertView-dummy.m"; sourceTree = "<group>"; };
+		FE24B71D6F4DF418D380D59512523FBF /* JSSAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JSSAlertView.swift; sourceTree = "<group>"; };
+		FF0247D32E7A6AD54514BCE33E1524A3 /* xvmc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xvmc.h; path = "SDK/lib/libav-11.4/include/libavcodec/xvmc.h"; sourceTree = "<group>"; };
+		FF0CE6E1A54321562C4381C9E563A311 /* mathematics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mathematics.h; path = "SDK/lib/libav-11.4/include/libavutil/mathematics.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8691C102A04B864D236DAA3B3A50F3AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDFE9B2CC8C68826D63565BF23B49F94 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBE58FFE5AB62434D61596C70B2FD757 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B98FC34142CB8F476DBDEB74EBEF4C8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4BB15DB7570DB751CADFBF292240FDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B013E2858C3A29B2CD6F93404027A45 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E927D6CAD7AC5B7B9FC5EE9D02AE8B62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56F43E1769A4AFB8F32CB552121F03A3 /* Foundation.framework in Frameworks */,
+				E593E59B03939701D5BD7D2B442402AA /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18340F12838DEE43507667CC74401EB1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */,
+				C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18340F12838DEE43507667CC74401EB1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E8FD624FEF5CAE85A0393825B8D74D6 /* TextFieldEffects */ = {
+			isa = PBXGroup;
+			children = (
+				4537ADB23EB81ACD777D78783F484234 /* AkiraTextField.swift */,
+				1F25723C78CFCA1EFEBFE3E54F6E2F78 /* HoshiTextField.swift */,
+				0C95600FD2C833A273A447E00BD77410 /* IsaoTextField.swift */,
+				49B7482DE6810E6B23E47773013491BD /* JiroTextField.swift */,
+				C8BCD8719375F305430F324DA5707569 /* KaedeTextField.swift */,
+				1622293389777580A6A9733C52AC7D6E /* MadokaTextField.swift */,
+				33E8B846EACC329E151D04A7F8029E83 /* MinoruTextField.swift */,
+				D83A8A1CE8CE336308928842C14B95E6 /* TextFieldsEffects.swift */,
+				0EC15B6BCB1CD79FB8C8EB76C6D2E937 /* YokoTextField.swift */,
+				0256D450674933FF3B561EE58760A853 /* YoshikoTextField.swift */,
+				BB5837AA365FCD7013AE47A9FC4686F4 /* Support Files */,
+			);
+			path = TextFieldEffects;
+			sourceTree = "<group>";
+		};
+		72B6D3217276223BFF51A2849B5E0615 /* JSSAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				FE24B71D6F4DF418D380D59512523FBF /* JSSAlertView.swift */,
+				89C981382E3E1AA4288C3E9C317FF437 /* Support Files */,
+			);
+			path = JSSAlertView;
+			sourceTree = "<group>";
+		};
+		75D98FF52E597A11900E131B6C4E1ADA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */,
+				79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */,
+				D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */,
+				87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */,
+				894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */,
+				E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */,
+				CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */,
+				2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */,
+				977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */,
+				DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				8BA0F75040D65EA2C976A0B8D81D7287 /* Pods */,
+				FD122284D47250C4D7B606A9F1FA8487 /* Products */,
+				B7B80995527643776607AFFA75B91E24 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		89C981382E3E1AA4288C3E9C317FF437 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				851F5D92A6017B42C5631897973A8E8F /* Info.plist */,
+				DF1D8CD913439A04BB7E2645A8E08847 /* JSSAlertView.modulemap */,
+				20BB16908A1F029B334956E35A95EAD2 /* JSSAlertView.xcconfig */,
+				FD5A7185EFB3AF9B6A48F0C0BF2AB712 /* JSSAlertView-dummy.m */,
+				00A90AC9CB9E1B55BA3C8F0B4338F03C /* JSSAlertView-prefix.pch */,
+				40455CA06C01D817F8137E996EED6110 /* JSSAlertView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JSSAlertView";
+			sourceTree = "<group>";
+		};
+		8BA0F75040D65EA2C976A0B8D81D7287 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FAF049011E884C599488462BA7585D99 /* Backendless-ios-SDK */,
+				72B6D3217276223BFF51A2849B5E0615 /* JSSAlertView */,
+				F1D4A30D3D00120AB067D6E48BD04D38 /* SwiftSpinner */,
+				6E8FD624FEF5CAE85A0393825B8D74D6 /* TextFieldEffects */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B7B80995527643776607AFFA75B91E24 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				75D98FF52E597A11900E131B6C4E1ADA /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BB5837AA365FCD7013AE47A9FC4686F4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				08940F0E70535BCEA6D37CEACEC2C3F8 /* Info.plist */,
+				0BA7C115EE1DB7CC33AB643D6E316DD1 /* TextFieldEffects.modulemap */,
+				2540DD41C333C8A16FD44448082FA4D5 /* TextFieldEffects.xcconfig */,
+				7289098B93846FF55E912356606225F1 /* TextFieldEffects-dummy.m */,
+				F5D1B63AF3F0C9C4803A2321B7341084 /* TextFieldEffects-prefix.pch */,
+				30303AB4542739FCB7554336EE9ECCB7 /* TextFieldEffects-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TextFieldEffects";
+			sourceTree = "<group>";
+		};
+		E987DC82E1BDDED2B69B11A401EA7BAD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BE7A1310FF5FD523E3A18FD874053FD /* Info.plist */,
+				159A98925D7EE1D0C7F7F5356AD5E51B /* SwiftSpinner.modulemap */,
+				6C8CD61599F4BCB5FD7B6062B463CBD7 /* SwiftSpinner.xcconfig */,
+				E2C3C24C2D4C681A9E7DADF88BFA5AA9 /* SwiftSpinner-dummy.m */,
+				CF173E1B7CB2A8E5DAF8E69D5711FB73 /* SwiftSpinner-prefix.pch */,
+				810F3F0421BEFBF51D2C5FAB51A231E4 /* SwiftSpinner-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftSpinner";
+			sourceTree = "<group>";
+		};
+		F1D4A30D3D00120AB067D6E48BD04D38 /* SwiftSpinner */ = {
+			isa = PBXGroup;
+			children = (
+				2297C6AB2E925F4468E67BECB2C71F10 /* SwiftSpinner.swift */,
+				E987DC82E1BDDED2B69B11A401EA7BAD /* Support Files */,
+			);
+			path = SwiftSpinner;
+			sourceTree = "<group>";
+		};
+		FAF049011E884C599488462BA7585D99 /* Backendless-ios-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				BAEAA1144001D8C618D9B5097C14A3CB /* AbstractProperty.h */,
+				CE9AEDB7D1388D39875E2D4C320DB39F /* AbstractQuery.h */,
+				C09CB30C9C94E488FF552297D0102BE5 /* adler32.h */,
+				65ACB1FD2975B6C70CBF5CDFAA882D3C /* aes.h */,
+				4090AE68BEE88387AC563462F6167E56 /* AMFSerializer.h */,
+				C3B69F4328B8E324F3E6F6E73C3C0F54 /* AtomicCounters.h */,
+				2E56800B89A361B96A4BF955C62B53DC /* AtomicCountersFactory.h */,
+				63F703330C50BFAC40F39E84C70D4AF8 /* attributes.h */,
+				4ED9CE254DB007E79DFDEB7CF639B60D /* audio_fifo.h */,
+				0C63CD60DACF48A32241C500FD9E9E8E /* audioconvert.h */,
+				4550B72986BF120539D61BCD84292741 /* avassert.h */,
+				C347801955972524AD607B3941049EE6 /* avcodec.h */,
+				097F82817C2BB462F070ACCF05ED2AD2 /* avconfig.h */,
+				14C8448EA5063E85E82D1CE35D8318F9 /* avdevice.h */,
+				F4E3F9DB5B911CE428782B18BCC0D8B0 /* avfft.h */,
+				C04134BA2F778C857E447E80F6396DE9 /* avfilter.h */,
+				4553D090FCC2F868A7D97C01DED7D995 /* avfiltergraph.h */,
+				E9D3024082B035155F0C3EEDD613E62D /* avformat.h */,
+				6B7CAE89A704517B6413E624944ECA30 /* avio.h */,
+				7358EC40885C2C86EF39FD08CF3D4892 /* avresample.h */,
+				73D79BE1186AE1CF57C6F76F2EA67F8F /* avstring.h */,
+				2CC0D762EAF355E76D11FBB2CE318CDA /* avutil.h */,
+				FA2E83B9EFDC5E1E96A87758CB69647D /* Backendless.h */,
+				07D6CA92A682BBA7E21F1D6556139966 /* Backendless-Bridging-Header.h */,
+				0D072D4D637F1DEB21B0794EF4381BF1 /* Backendless-With-Media-Bridging-Header.h */,
+				0AFB9D7000ECF25BDE11AF957490088F /* BackendlessBeacon.h */,
+				7425430CB325BA1115CCF177AC33B6C1 /* BackendlessCachePolicy.h */,
+				270AE1571BC4CF1B1EDD4B5C20AFA520 /* BackendlessCacheProtocol.h */,
+				83C99E3B5F40B2632FBF983DF7AE8E50 /* BackendlessCollection.h */,
+				F271049EE3CB68BC57499B66A7905CD8 /* BackendlessDataQuery.h */,
+				9079AA1F4BC010890643D885FA577A46 /* BackendlessEntity.h */,
+				EB9C5DBD7A4C341777B99FF9316F9174 /* BackendlessFile.h */,
+				85878FC0846C8EAE8FF51D75C529199E /* BackendlessGeoQuery.h */,
+				CFD1CD14A349FC52FD8FB69FB08FB766 /* BackendlessSimpleQuery.h */,
+				0E36AA2EF6428AC5B6AD9732213B54B6 /* BackendlessUser.h */,
+				CEC7A0ACF91F89FBD85C82A01C6345CE /* base64.h */,
+				0A9C589E738B3DF052149B71E544F35A /* BEAnnotation.h */,
+				14E479BEB8E52B25E217473408C2B44D /* BECollectionView.h */,
+				A7F7EA6347BF001CDC03145B8FAFBF28 /* BEFileInfo.h */,
+				7C3A68FAAF79710B0A80A41F9BD2005A /* BEMapView.h */,
+				F5E3C23C4B4DCBD3AC23071016EBDCAF /* BESubscription.h */,
+				08267DC262ED4E736A8D234FEBCA0378 /* BETableView.h */,
+				6696407938976DFA9FBB6DDF1B835456 /* BinaryCodec.h */,
+				28D91DB3E5140E5473DD03DF7E7F68B7 /* BinaryStream.h */,
+				E273C09F352A00F4A364ADA1427224C7 /* blowfish.h */,
+				35343767BF524D15463573B8E045A561 /* BroadcastStreamClient.h */,
+				1402F3706498E7EA5DAE55CD5B12F0AD /* bswap.h */,
+				8E5BC41C0F06A5BB3CB7FAEC8206DD4C /* buffer.h */,
+				2595C3E3F4761CA17E6E6B171203BCFF /* buffersink.h */,
+				8059FD439C6AA1180AB07EB61BDA2547 /* buffersrc.h */,
+				043FA73A17D98C86D2885370E1F29A79 /* CacheFactory.h */,
+				34528C63E0D572A5638016B3F7A43907 /* CacheService.h */,
+				909467D97E9078C9478B04AC65FC6631 /* channel_layout.h */,
+				5F9D389D58FF64E269B3595A13B103F8 /* common.h */,
+				2BD41C29CC01DD6893853D292CB3C671 /* cpu.h */,
+				D359BC85C8B0811C1B320E5FE67194F0 /* crc.h */,
+				1903ACE30099A5CFDBB006011639DCC0 /* CustomService.h */,
+				B9FB1FC1CEBA1758C1847DD2C465C057 /* DataPermission.h */,
+				B7B183EFDAF6C4303049B301C2F6FD05 /* DataStoreFactory.h */,
+				9F47BAC49EE10940B060F1BA9D11FCF7 /* DEBUG.h */,
+				6A73ABBAE6E4569FE25986BEB6FD2F29 /* DeliveryOptions.h */,
+				DD60B53D0391572B110695773EDE5BB2 /* DeviceRegistration.h */,
+				07940DCAE7C70D4330F994735623A08B /* dict.h */,
+				03BCB497F54D5E445D74F390D217F99B /* display.h */,
+				4AA3D673C617DBCF70F0FAF7A3481707 /* downmix_info.h */,
+				993E129ADE2867DA3A8502677EE15103 /* dv_profile.h */,
+				8397530C010A6CD139EF37D923709B6A /* dxva2.h */,
+				A8EFCED669670160D17E745744B88577 /* error.h */,
+				B52AA3F35F9D0411FC2E20B27F58A002 /* eval.h */,
+				AE8523D87DADED5CFCDCDCD78C8208FE /* Events.h */,
+				2093A23324C9767463364C8CDD2B4BC7 /* fifo.h */,
+				26ED7FFDB0309C07D2C7672A537315E7 /* file.h */,
+				4444DC91CD4E1AC66376A94A9E2CE9C1 /* FilePermission.h */,
+				54E385D03773B14D7F56054771116AAE /* FileService.h */,
+				01714194AFA92432AB1742B0622E6C80 /* FlashorbBinaryReader.h */,
+				407E0BF8586A73293C400F263417914A /* FlashorbBinaryWriter.h */,
+				A8C281E79DABB7F72AA4EEDCEB17DE82 /* frame.h */,
+				EB268CEDACF3D0E8AE8ACB1B2F3BA191 /* GeoCategory.h */,
+				9079C6667C9D9FF5FDA1C0CCA483F0F5 /* GeoCluster.h */,
+				7C0B5874E78885ED371DEF59658A9C9E /* GeoFence.h */,
+				00DBE20A07AB180FF013963EDEE3BA5E /* GeoPoint.h */,
+				225E9A7479FFC7C1AB8B60F14484F12D /* GeoService.h */,
+				B3AF782691C93294D59070D2CF3D9BEA /* HashMap.h */,
+				3AA1EE8FBDD6FC79825EF278E9A2CE37 /* hmac.h */,
+				266A4AC9156357496C3748F5ED98F2C2 /* IAtomicCounters.h */,
+				69B2189685128D66016F99E05AC77746 /* IAttributeStore.h */,
+				8BF32E20D3BC02C1D8513B93BA7DED77 /* ICacheService.h */,
+				DAA34833F56AEF35DAD6305FDDB416C8 /* ICallback.h */,
+				B9DC826892A3F5E55AFB84E9C44D8793 /* IClientSharedObject.h */,
+				939BA50458FC6F577DB0DD07DFEB2C95 /* IClientSharedObjectDelegate.h */,
+				101FC1E47180888F62BEC410CBD1F6AF /* IDataStore.h */,
+				8EB497426C44ADB6C5E79B8DD0D1D8AA /* IMediaStreamer.h */,
+				5695686E093AA1D9343D663BEB43C8F6 /* imgutils.h */,
+				B02A78A6D8B7A32A463A5CB1150DFCD5 /* intfloat.h */,
+				EB4D2D925CCA010211BB3097CE962C4D /* intreadwrite.h */,
+				79DDEE5D6D755B909F501EE9344F2490 /* IPendingServiceCallback.h */,
+				0BBE89D2655A08437558989F4C37A9C1 /* IPersistable.h */,
+				DFB30684167343593710E679941EEF0C /* IPresenceListener.h */,
+				1A19CB07B8A40D872E651B0176ED5913 /* IRTMProtocol.h */,
+				6FD6CD4273B9A17A6CE2B5A9F3BF1429 /* IServiceCall.h */,
+				64AE053FC08F8E280DAC8778A271E1A4 /* ISharedObjectListener.h */,
+				6EF5B9EAECDF0F53C6274711F4EE4010 /* lfg.h */,
+				C1855B4B1D5A3D44BB693F8CA71EB765 /* LocationTracker.h */,
+				B566A62B413523DD9616FFBC9785B533 /* log.h */,
+				228CFDF832BFE4D353E4C50CB6666218 /* Logger.h */,
+				3CB4B18E347FBFC195B991DE00A39E2C /* Logging.h */,
+				60091ED98E20D3467FE95D9A24227167 /* macros.h */,
+				FF0CE6E1A54321562C4381C9E563A311 /* mathematics.h */,
+				5B6D6EFA40D143670D0A957532AEF857 /* md5.h */,
+				723C9AA3DC684E94C5B6094FECA7EFCB /* MediaPlaybackOptions.h */,
+				C3C5DED4E4AA0CF30CFF9B5A2A1DBFAC /* MediaPlayer.h */,
+				12D81D4C4BD977493F7266BE843562E6 /* MediaPublisher.h */,
+				A6D587D27CAB24B612189BB42195F2EA /* MediaPublishOptions.h */,
+				CA4CFEDC9DD9EED9000D7E5C91C62A62 /* MediaService.h */,
+				A2E0FD05A4B02921B3E15045AC0531CE /* MediaStreamPlayer.h */,
+				7818E7BCEB8FEFB755A064B0BA749897 /* mem.h */,
+				43886B5B873B4BC11CF66F8F513364C7 /* MemoryTicker.h */,
+				8592667D4CA029BC74A91C8DE970ED6B /* Message.h */,
+				37BC714A1789C9AFB8020F8145334147 /* MessageStatus.h */,
+				D16EC080256DE6A84B5C211946ED3A79 /* MessagingService.h */,
+				57DDA1004BA315C3169374D212026266 /* MPMediaData.h */,
+				5D06DDD7018583741C7C5EEF98D9E97C /* MPMediaDecoder.h */,
+				B96670559E30DED0EE5606CF8EB82516 /* MPMediaEncoder.h */,
+				3C33C25FF89A838F6547E424F2F0F6F5 /* ObjectProperty.h */,
+				DA5F7142BD9EEF24099CD584E2F39329 /* old_pix_fmts.h */,
+				2A17E37010B2F8A50413FDC3676D0641 /* opt.h */,
+				6836D9F26DBC15452675867AE4AB616E /* parseutils.h */,
+				D43E19CB67FB37F501EBD96954EE453D /* PersistenceService.h */,
+				F19FB20B7A604CC39F5D2C4FE99FE8F1 /* pixdesc.h */,
+				B5EA9340AD4C07A29569FE15295F5583 /* pixfmt.h */,
+				7F1B7D3B6933B3BD67DE356E993EA63F /* Presence.h */,
+				A412FD5B4484527EAC6602BDAC2BE251 /* ProtectedBackendlessGeoQuery.h */,
+				82B95BEFAA02C14C62176FCE3A49F3C2 /* PublishOptions.h */,
+				E8B0A25BE8F4F99E871C90B3EA1179AC /* QueryOptions.h */,
+				4CB2047C75B6F46F62875C6FE8135BCB /* random_seed.h */,
+				A5A8AB2550A992962FDDCCE7A5CA3505 /* rational.h */,
+				146EDB02E37F1938EE5A5A3C80B930F9 /* replaygain.h */,
+				A4F2E94625F4601E259FBAA01054F351 /* Responder.h */,
+				5EA1E9C637D774EF021F39A83FB10F9D /* RTMPClient.h */,
+				9D54013917EBCCB6110EF445E20F4F52 /* samplefmt.h */,
+				281C7EA3413B638D6A2796EF40961829 /* sha.h */,
+				6C1F3681125A0B5C1DFF8F4D10ACA25F /* speex.h */,
+				758E299CAE4B15EE093754368ED3F1CE /* speex_bits.h */,
+				E47B31683036299F9CC2278BC52939F5 /* speex_callbacks.h */,
+				D0B48C29BA9146B842EA62EAB811FCCD /* speex_config_types.h */,
+				A018BD2182CBAB56689E7FF68D24E527 /* speex_header.h */,
+				D671A286316A5DFC7B30FB7A0B703D7A /* speex_stereo.h */,
+				6DCAA2ED1F13F507469229C8024AEB41 /* speex_types.h */,
+				5F08012090A9D8CC7B7A1D5ABD2E1EC4 /* stereo3d.h */,
+				9CFBD6992C09DBD46D7DB62C8D357ECA /* SubscriptionOptions.h */,
+				797B9E3C6657B4D18DF484022D404EA5 /* swscale.h */,
+				457C8C65D82A91695A69EAC9ECF20E79 /* time.h */,
+				DBCAF4F9DA1625BC03A46E130169FB68 /* Types.h */,
+				EF905A9BB46ED3E9430978239D987013 /* UserProperty.h */,
+				ECC4DEBA8D1CE666642F234C9DD200EC /* UserService.h */,
+				AC9AC910BB1AC08DB4F21F8CE29DA12D /* vaapi.h */,
+				311ABA2FABBCA1E32EBE14C541E4F170 /* vda.h */,
+				F85386E1B2CBF242EEF9F31C35470FFB /* vdpau.h */,
+				4E1AB7C0C853A228B064C8290C5961E1 /* version.h */,
+				C84C23F1879A243E871AA4BBDC348E79 /* version.h */,
+				88D80A87B0AADEC921D8E39850CD5A54 /* version.h */,
+				5B27FF8B529831382D93C2FD01AFAFB1 /* version.h */,
+				C20F9617ECB8B3825D9E960F3630665E /* version.h */,
+				23699CE8EB565FC32C43A3532BBE5934 /* version.h */,
+				B0CC6FC212AF4D619B4AED0B21F497EF /* version.h */,
+				0D9658ECFD0A6FDEED17EC60A097190C /* VideoPlayer.h */,
+				F68034D4A69D25712CE053F289668E3F /* WeborbClient.h */,
+				BA9F6CDFD59B65344B0BC9F0858433AE /* x264.h */,
+				76C72B97105A983AECFA4DFB2EC3491C /* x264_config.h */,
+				57C2FBD58427608B70021DA2796B4CEE /* xtea.h */,
+				FF0247D32E7A6AD54514BCE33E1524A3 /* xvmc.h */,
+			);
+			path = "Backendless-ios-SDK";
+			sourceTree = "<group>";
+		};
+		FD122284D47250C4D7B606A9F1FA8487 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D9F208DF43E4FF92F7A0189BF2142AB /* JSSAlertView.framework */,
+				2BA9756EB70BB58C299CC91FE5C7FC0D /* Pods.framework */,
+				BA38C7F9EE9D5D0EFCA8569F6AE3CC77 /* SwiftSpinner.framework */,
+				33ACE9256ADC9DBCE16FE30C4306C7C8 /* TextFieldEffects.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		95A08FAC63A08F7291A1D962A6A55D23 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A06835C8E53757EFC7B5C3FF5D1CAC84 /* JSSAlertView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE1C28395A6A53F2F89412EFFF9BACC2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D85BE3F94F1F7C5A9B70AFE29723E6E /* SwiftSpinner-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F814B2D03971C9B0623ED712BBA37AF6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1577E53EC5208E8C7A61398BF611D6D1 /* TextFieldEffects-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE1D349AA086BF978BE91A1DDF702891 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				003894EB3D7B11EA7FD3A00FE840AD77 /* Pods-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1B87DBD91CD9BDB1E1FE914F8D5268FD /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A52458887A2360500D5502E961CA24DF /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				01E36EE28D221D87BDD9878F2D855410 /* Sources */,
+				8691C102A04B864D236DAA3B3A50F3AD /* Frameworks */,
+				FE1D349AA086BF978BE91A1DDF702891 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93D8E55CB49DEFDB1A0B604E051978F7 /* PBXTargetDependency */,
+				BAE14583AFD4B67E7250298071492B3B /* PBXTargetDependency */,
+				9E4E791AB142ADAF4CC9EC4990376D30 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 2BA9756EB70BB58C299CC91FE5C7FC0D /* Pods.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		72D57DED5129BDCAEB112D61B15B08A2 /* JSSAlertView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C41E19394581D63D2B94DA16A8984ACC /* Build configuration list for PBXNativeTarget "JSSAlertView" */;
+			buildPhases = (
+				C08CA3B7D8FF5B5FD5AE4AA45E4DC726 /* Sources */,
+				BBE58FFE5AB62434D61596C70B2FD757 /* Frameworks */,
+				95A08FAC63A08F7291A1D962A6A55D23 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSSAlertView;
+			productName = JSSAlertView;
+			productReference = 0D9F208DF43E4FF92F7A0189BF2142AB /* JSSAlertView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		99CB6069823F1D0CC00971CC4D7EBDDA /* TextFieldEffects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CAA43270F44BCD2ACD505C64BE7459E /* Build configuration list for PBXNativeTarget "TextFieldEffects" */;
+			buildPhases = (
+				3A845987DB1390193FBC1A3F58A69336 /* Sources */,
+				E4BB15DB7570DB751CADFBF292240FDB /* Frameworks */,
+				F814B2D03971C9B0623ED712BBA37AF6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextFieldEffects;
+			productName = TextFieldEffects;
+			productReference = 33ACE9256ADC9DBCE16FE30C4306C7C8 /* TextFieldEffects.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CAD0829DA2B94C414A049FD91E391BD0 /* SwiftSpinner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AE1A3B747973B78DB31706A2A4CED53 /* Build configuration list for PBXNativeTarget "SwiftSpinner" */;
+			buildPhases = (
+				B0C10F3E5433C21BFDF0B38A2C468374 /* Sources */,
+				E927D6CAD7AC5B7B9FC5EE9D02AE8B62 /* Frameworks */,
+				EE1C28395A6A53F2F89412EFFF9BACC2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftSpinner;
+			productName = SwiftSpinner;
+			productReference = BA38C7F9EE9D5D0EFCA8569F6AE3CC77 /* SwiftSpinner.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = FD122284D47250C4D7B606A9F1FA8487 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72D57DED5129BDCAEB112D61B15B08A2 /* JSSAlertView */,
+				1B87DBD91CD9BDB1E1FE914F8D5268FD /* Pods */,
+				CAD0829DA2B94C414A049FD91E391BD0 /* SwiftSpinner */,
+				99CB6069823F1D0CC00971CC4D7EBDDA /* TextFieldEffects */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01E36EE28D221D87BDD9878F2D855410 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FF17B1BC989807DE22B0AA6203CB513 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A845987DB1390193FBC1A3F58A69336 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCCD359F916BC487EF4D6980EE19D499 /* AkiraTextField.swift in Sources */,
+				A669D0EE7B9847E380B254ED9755B866 /* HoshiTextField.swift in Sources */,
+				65FCF5D5E41106EDBCDE4DFA2D12CA52 /* IsaoTextField.swift in Sources */,
+				483370A78239274968601096E3D1A8F6 /* JiroTextField.swift in Sources */,
+				796F15C193F75C4910A2240FCCA30136 /* KaedeTextField.swift in Sources */,
+				B0F0622133FB97E87520FD669BF3A982 /* MadokaTextField.swift in Sources */,
+				7CB4A59A47D96DE60A9BF7BC406DA055 /* MinoruTextField.swift in Sources */,
+				A5A1E2FE55CC1F2D23A4B0A8D22D1166 /* TextFieldEffects-dummy.m in Sources */,
+				F0BEA8935EF0C8F3F620B0FA4B1F6A04 /* TextFieldsEffects.swift in Sources */,
+				9D010E176166D76B9F7290C003DBB57E /* YokoTextField.swift in Sources */,
+				68DA15F89D601B46CE8D01411AB7755F /* YoshikoTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0C10F3E5433C21BFDF0B38A2C468374 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1A96C22A5058DC29A67B7F66B907022 /* SwiftSpinner-dummy.m in Sources */,
+				BC29E6BE8EAACDA1266B276EFE12752C /* SwiftSpinner.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C08CA3B7D8FF5B5FD5AE4AA45E4DC726 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7425E8EA9C84F725D98E4381F2C4DFEA /* JSSAlertView-dummy.m in Sources */,
+				13A8417F416E1613A26032A5A6D7F0E9 /* JSSAlertView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93D8E55CB49DEFDB1A0B604E051978F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JSSAlertView;
+			target = 72D57DED5129BDCAEB112D61B15B08A2 /* JSSAlertView */;
+			targetProxy = 506B4BC5B759F95FCBE85882CBEA0DB7 /* PBXContainerItemProxy */;
+		};
+		9E4E791AB142ADAF4CC9EC4990376D30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TextFieldEffects;
+			target = 99CB6069823F1D0CC00971CC4D7EBDDA /* TextFieldEffects */;
+			targetProxy = 5E7FF4A49041D794F3BEDFD10767C77B /* PBXContainerItemProxy */;
+		};
+		BAE14583AFD4B67E7250298071492B3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftSpinner;
+			target = CAD0829DA2B94C414A049FD91E391BD0 /* SwiftSpinner */;
+			targetProxy = 7FB552594A988E41E72D539066A93A34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0F73496019BC25C4E801BDCBFB62DDD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20BB16908A1F029B334956E35A95EAD2 /* JSSAlertView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JSSAlertView/JSSAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JSSAlertView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JSSAlertView/JSSAlertView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = JSSAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2F2EBE7D788626171F44164E7E95FABE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		32657C1711FFDF579E1C334D5602CF16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C8CD61599F4BCB5FD7B6062B463CBD7 /* SwiftSpinner.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSpinner/SwiftSpinner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSpinner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftSpinner/SwiftSpinner.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftSpinner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4A5BA110B29543FD19ACBFD94FA2ED1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20BB16908A1F029B334956E35A95EAD2 /* JSSAlertView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JSSAlertView/JSSAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JSSAlertView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JSSAlertView/JSSAlertView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JSSAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AAF7D0C8FB4B53AF677CE42E00079F1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2540DD41C333C8A16FD44448082FA4D5 /* TextFieldEffects.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TextFieldEffects;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AC1EE8C56F8E3070D244A7B4F6329AD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AC6424538E92462C1EA5A41FBDB4A4B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C8CD61599F4BCB5FD7B6062B463CBD7 /* SwiftSpinner.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSpinner/SwiftSpinner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSpinner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftSpinner/SwiftSpinner.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftSpinner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EFA7E22415B309385788508DF0433763 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2540DD41C333C8A16FD44448082FA4D5 /* TextFieldEffects.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TextFieldEffects;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AE1A3B747973B78DB31706A2A4CED53 /* Build configuration list for PBXNativeTarget "SwiftSpinner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32657C1711FFDF579E1C334D5602CF16 /* Debug */,
+				AC6424538E92462C1EA5A41FBDB4A4B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CAA43270F44BCD2ACD505C64BE7459E /* Build configuration list for PBXNativeTarget "TextFieldEffects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFA7E22415B309385788508DF0433763 /* Debug */,
+				AAF7D0C8FB4B53AF677CE42E00079F1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A52458887A2360500D5502E961CA24DF /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC1EE8C56F8E3070D244A7B4F6329AD1 /* Debug */,
+				2F2EBE7D788626171F44164E7E95FABE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C41E19394581D63D2B94DA16A8984ACC /* Build configuration list for PBXNativeTarget "JSSAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F73496019BC25C4E801BDCBFB62DDD1 /* Debug */,
+				4A5BA110B29543FD19ACBFD94FA2ED1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
