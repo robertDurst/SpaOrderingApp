@@ -8,6 +8,7 @@
 
 import UIKit
 import TextFieldEffects
+import SwiftSpinner
 
 let backendless = Backendless.sharedInstance()
 
@@ -106,6 +107,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     //Login function called when login button is tapped
     func Login(sender: UIButton){
+        SwiftSpinner.show("Logging In")
         loginUserAsync()
         
     }
@@ -122,9 +124,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             String(usernameTextField.text!), password:String(passwordTextField.text!),
             response: { (let registeredUser : BackendlessUser!) -> () in
                 let vc = self.storyboard?.instantiateViewControllerWithIdentifier("MenuTable") as? MenuTableViewController
+                SwiftSpinner.hide()
                 self.navigationController?.pushViewController(vc!, animated: true)
                            },
             error: { (let fault : Fault!) -> () in
+                SwiftSpinner.hide()
                 JSSAlertView().show(
                     self,
                     title: "Error",

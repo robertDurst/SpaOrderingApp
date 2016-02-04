@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5398C7B7708A3AFD19BE36DF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8D69627C21747ACF9C9957 /* Pods.framework */; };
+		DC4137711C630854009FE9B8 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4137701C630854009FE9B8 /* CartTableViewCell.swift */; };
 		DC53227E1C604BD4007049DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53227D1C604BD4007049DC /* AppDelegate.swift */; };
 		DC5322831C604BD4007049DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5322811C604BD4007049DC /* Main.storyboard */; };
 		DC5322851C604BD4007049DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC5322841C604BD4007049DC /* Assets.xcassets */; };
@@ -22,7 +23,6 @@
 		DC53229E1C614388007049DC /* menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53229D1C614388007049DC /* menu.swift */; };
 		DC5322A01C614846007049DC /* MenuDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53229F1C614846007049DC /* MenuDataSource.swift */; };
 		DC5322A21C6153D8007049DC /* MenuITemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5322A11C6153D8007049DC /* MenuITemViewController.swift */; };
-		DC5322A81C6160A2007049DC /* menuButItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5322A71C6160A2007049DC /* menuButItemViewController.swift */; };
 		DC5322AA1C616A63007049DC /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5322A91C616A63007049DC /* CartTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +30,7 @@
 		0872264F4709E070234CEA80 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6D8D69627C21747ACF9C9957 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D40C744D44E9FD329488583A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		DC4137701C630854009FE9B8 /* CartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
 		DC53227A1C604BD4007049DC /* SPA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC53227D1C604BD4007049DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC5322821C604BD4007049DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,7 +47,6 @@
 		DC53229D1C614388007049DC /* menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menu.swift; sourceTree = "<group>"; };
 		DC53229F1C614846007049DC /* MenuDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuDataSource.swift; sourceTree = "<group>"; };
 		DC5322A11C6153D8007049DC /* MenuITemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuITemViewController.swift; sourceTree = "<group>"; };
-		DC5322A71C6160A2007049DC /* menuButItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuButItemViewController.swift; sourceTree = "<group>"; };
 		DC5322A91C616A63007049DC /* CartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,8 +101,8 @@
 				DC53229D1C614388007049DC /* menu.swift */,
 				DC53229F1C614846007049DC /* MenuDataSource.swift */,
 				DC5322811C604BD4007049DC /* Main.storyboard */,
+				DC4137701C630854009FE9B8 /* CartTableViewCell.swift */,
 				DC5322A91C616A63007049DC /* CartTableViewController.swift */,
-				DC5322A71C6160A2007049DC /* menuButItemViewController.swift */,
 				DC5322A11C6153D8007049DC /* MenuITemViewController.swift */,
 				DC5322971C607F93007049DC /* MenuTableViewController.swift */,
 				DC53229B1C613EE2007049DC /* MenuTableViewCell.swift */,
@@ -252,8 +252,8 @@
 				DC5322961C607F6D007049DC /* SignupViewController.swift in Sources */,
 				DC5322941C606D5A007049DC /* LoginViewController.swift in Sources */,
 				DC53227E1C604BD4007049DC /* AppDelegate.swift in Sources */,
-				DC5322A81C6160A2007049DC /* menuButItemViewController.swift in Sources */,
 				DC5322AA1C616A63007049DC /* CartTableViewController.swift in Sources */,
+				DC4137711C630854009FE9B8 /* CartTableViewCell.swift in Sources */,
 				DC53229A1C608BA5007049DC /* JSSAlertView.swift in Sources */,
 				DC5322A21C6153D8007049DC /* MenuITemViewController.swift in Sources */,
 				DC53229E1C614388007049DC /* menu.swift in Sources */,

@@ -84,40 +84,33 @@
             </objects>
             <point key="canvasLocation" x="2471" y="1037"/>
         </scene>
-        <!--Menu But Item View Controller-->
-        <scene sceneID="c74-WN-5bk">
-            <objects>
-                <viewController storyboardIdentifier="PopupTimePickerViewController" id="wdY-Nr-K7E" customClass="menuButItemViewController" customModule="SPA" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="aaR-gB-umQ"/>
-                        <viewControllerLayoutGuide type="bottom" id="cu1-Nc-2R7"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="aKE-Ai-C7l">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KIy-To-vVk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3144" y="886"/>
-        </scene>
-        <!--Table View Controller-->
+        <!--Cart Table View Controller-->
         <scene sceneID="of0-2o-1od">
             <objects>
-                <tableViewController storyboardIdentifier="cart" id="igq-72-GlS" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="cart" id="igq-72-GlS" customClass="CartTableViewController" customModule="SPA" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="uit-yg-dpw">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="huw-nX-dB7">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CartCell" id="huw-nX-dB7" customClass="CartTableViewCell" customModule="SPA" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="huw-nX-dB7" id="hPE-Xb-6uf">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7M-5D-7ZQ">
+                                            <rect key="frame" x="8" y="11" width="592" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cartLabel" destination="I7M-5D-7ZQ" id="o3Q-5b-nWw"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -128,7 +121,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KNx-6R-cdE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3910" y="695"/>
+            <point key="canvasLocation" x="3202" y="1037"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="GvQ-Lo-bXy">

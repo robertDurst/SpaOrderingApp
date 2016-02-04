@@ -10,6 +10,7 @@ import UIKit
 
 let manager = MenuDataSource()
 let menu = manager.fetchingFirstPage()
+var orderCart: Array<[String]> = []
 
 
 class MenuTableViewController: UITableViewController {

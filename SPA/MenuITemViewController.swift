@@ -8,15 +8,15 @@
 
 import UIKit
 
-class MenuITemViewController: UIViewController, UIPopoverPresentationControllerDelegate {
+class MenuITemViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate  {
     var itemName = UILabel()
     var itemDescription = UITextView()
     var itemPrice = UILabel()
-    var itemQuantity = UILabel()
+    var itemPricePerQuantity = UILabel()
+    var pickerView = UIPickerView()
+    var pickerDataSource = ["1", "2", "3", "4","5"]
     var menuItem:[String] = []
-    var Quantity = 1
-    
-    let popoverView =  menuButItemViewController()
+    var Quantity = "1"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +46,7 @@ class MenuITemViewController: UIViewController, UIPopoverPresentationControllerD
         self.view.addSubview(itemDescription)
         
         //Create label for the item price
-        itemPrice = UILabel(frame: CGRectMake(width/2, height*9/10, width/2-5, height/10))
+        itemPrice = UILabel(frame: CGRectMake(width/2, height*8/10, width/2-5, height/10))
         itemPrice.backgroundColor = .grayColor()
         itemPrice.textColor = .blackColor()
         itemPrice.text = "$\(menuItem[2])"
@@ -54,50 +54,51 @@ class MenuITemViewController: UIViewController, UIPopoverPresentationControllerD
         itemPrice.textAlignment = .Right
         self.view.addSubview(itemPrice)
         
-        //Create label for the item quantity
-        itemQuantity = UILabel(frame: CGRectMake(5, height*9/10, width/2-5, height/10))
-        itemQuantity.backgroundColor = .grayColor()
-        itemQuantity.textColor = .blackColor()
-        itemQuantity.text = "Quantity: \(Quantity)"
-        itemQuantity.font = UIFont(name: "Times New Roman", size: 20)
-        itemQuantity.textAlignment = .Left
-        self.view.addSubview(itemQuantity)
+        //Create label for the item price per Quantity
+        itemPricePerQuantity = UILabel(frame: CGRectMake(5, height*8/10, width/2-5, height/10))
+        itemPricePerQuantity.backgroundColor = .grayColor()
+        itemPricePerQuantity.textColor = .blackColor()
+        itemPricePerQuantity.text = "Price:"
+        itemPricePerQuantity.font = UIFont(name: "Times New Roman", size: 20)
+        itemPricePerQuantity.textAlignment = .Left
+        self.view.addSubview(itemPricePerQuantity)
         
-        //Create Pop up menu
-        popoverView.modalPresentationStyle = .Popover
-        popoverView.preferredContentSize = CGSizeMake(10, 10)
+        //Create the picker for the quantity selection
+        pickerView = UIPickerView(frame: CGRectMake(5,height*8/10+5, width-10, height/5-5))
+        self.pickerView.dataSource = self;
+        self.pickerView.delegate = self;
+        self.view.addSubview(pickerView)
+        
         
         //Bar Button on the right to use to buy item
-        let camera = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "buyItem:")
-        self.navigationItem.rightBarButtonItem = camera
+        let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "buyItem:")
+        self.navigationItem.rightBarButtonItem = addButton
         
     }
   
-    
+    //What happens when the upper right bar button is pressed
     func buyItem(sender: UIBarButtonItem){
-        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("PopupTimePickerViewController") as! menuButItemViewController
-        vc.modalPresentationStyle = .Popover
-        vc.preferredContentSize = CGSizeMake(200, 150)
-        
-        if let presentationController = vc.popoverPresentationController {
-            presentationController.delegate = self
-            presentationController.permittedArrowDirections = .Up
-            presentationController.sourceView = self.view
-            presentationController.sourceRect = CGRectMake(0, 0, 50, 50)
-            
-            self.presentViewController(vc, animated: true, completion: nil)
-        }
+        orderCart.append([menuItem[0],menuItem[2],Quantity])
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("cart") as? CartTableViewController
+        self.navigationController?.pushViewController(vc!, animated: true)
     }
     
-    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController!) -> UIModalPresentationStyle {
-        // Return no adaptive presentation style, use default presentation behaviour
-        return .None
-    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerDataSource.count;
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+        Quantity = pickerDataSource[row]
+        return pickerDataSource[row]
+    }
 
 }
