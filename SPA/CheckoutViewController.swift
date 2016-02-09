@@ -35,30 +35,32 @@ class CheckoutViewController: UIViewController {
         
 
         //Add all the menu items to the checkout
-        for x in (0...orderCart.count-1){
-            var orderString = ""
-            var counter = 0
-            for item in orderCart[x]{
-                if counter == 0{
-                    orderString += " \(item)   "
+        if orderCart.count > 0{
+            for x in (0...orderCart.count-1){
+                var orderString = ""
+                var counter = 0
+                for item in orderCart[x]{
+                    if counter == 0{
+                        orderString += " \(item)   "
+                    }
+                    if counter == 1{
+                        orderString += "Price: $\(item)   "
+                    }
+                    if counter == 2{
+                        orderString += "Quantity: \(item)"
+                    }
+                    counter += 1
                 }
-                if counter == 1{
-                     orderString += "Price: $\(item)   "
-                }
-                if counter == 2{
-                    orderString += "Quantity: \(item)"
-                }
-                counter += 1
+                
+                let labelCart = UILabel(frame:CGRectMake(5, CGFloat(70 + x * 25), width-10, CGFloat(50 + x * 25)))
+                labelCart.text = orderString
+                labelCart.font = UIFont(name: "Times New Roman", size: 14)
+                
+                
+                self.view.addSubview(labelCart)
             }
-            
-            let labelCart = UILabel(frame:CGRectMake(5, CGFloat(70 + x * 25), width-10, CGFloat(50 + x * 25)))
-            labelCart.text = orderString
-            labelCart.font = UIFont(name: "Times New Roman", size: 14)
 
-            
-             self.view.addSubview(labelCart)
         }
-        
         //Create The Dividing Line
         let lineLabel = UILabel(frame:CGRectMake(5, CGFloat(70 + orderCart.count * 25 + 25), width-10, 25))
         lineLabel.text = "__________________________________________"
