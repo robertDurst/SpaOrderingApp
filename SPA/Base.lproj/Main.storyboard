@@ -84,6 +84,24 @@
             </objects>
             <point key="canvasLocation" x="2471" y="1037"/>
         </scene>
+        <!--Checkout View Controller-->
+        <scene sceneID="hGU-q1-A51">
+            <objects>
+                <viewController storyboardIdentifier="checkout" id="rwU-oE-shl" customClass="CheckoutViewController" customModule="SPA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aTT-AY-moj"/>
+                        <viewControllerLayoutGuide type="bottom" id="7bg-aP-Z54"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4pJ-Lv-ft7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SGE-MB-JCV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3193" y="371"/>
+        </scene>
         <!--Cart Table View Controller-->
         <scene sceneID="of0-2o-1od">
             <objects>

@@ -23,6 +23,10 @@ class MenuTableViewController: UITableViewController {
         self.navigationItem.setHidesBackButton(true, animated:true)
         self.title = "Menu"
         
+        //Create the cart button
+        let menuButton = UIBarButtonItem(title: "Cart", style: .Plain, target: self, action: "goToCart:")
+        self.navigationItem.rightBarButtonItem = menuButton
+        
     }
 
     
@@ -50,6 +54,11 @@ class MenuTableViewController: UITableViewController {
         let row = indexPath.row
         cell.menuLabel.text = menu[row][0]
         return cell
+    }
+    
+    func goToCart(sender:UIBarButtonItem){
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("cart") as? CartTableViewController
+        self.navigationController?.pushViewController(vc!, animated: true)
     }
    
     override func prepareForSegue(segue: UIStoryboardSegue,

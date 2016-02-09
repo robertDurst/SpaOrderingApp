@@ -9,17 +9,22 @@
 import UIKit
 
 class CartTableViewController: UITableViewController {
-
+    
+    var checkoutButton = UIBarButtonItem()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Cart"
         self.navigationItem.setHidesBackButton(true, animated: false)
             
         //Create the menu back button
-        let menuButton = UIBarButtonItem(barButtonSystemItem: .Reply, target: self, action: "returnToMenu:")
+        let menuButton = UIBarButtonItem(title: "< Menu", style: .Plain, target: self, action: "returnToMenu:")
         self.navigationItem.leftBarButtonItem = menuButton
         
-
+        //Create the bar button for going to the cart
+        checkoutButton = UIBarButtonItem(title: "Checkout", style: .Plain, target: self, action: "goToCheckout:")
+        self.navigationItem.rightBarButtonItem = checkoutButton
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -58,6 +63,11 @@ class CartTableViewController: UITableViewController {
     
     func returnToMenu(sender:UIBarButtonItem){
         let vc = self.storyboard?.instantiateViewControllerWithIdentifier("MenuTable") as? MenuTableViewController
+        self.navigationController?.pushViewController(vc!, animated: true)
+    }
+    
+    func goToCheckout(sender:UIBarButtonItem){
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("checkout") as? CheckoutViewController
         self.navigationController?.pushViewController(vc!, animated: true)
     }
     
