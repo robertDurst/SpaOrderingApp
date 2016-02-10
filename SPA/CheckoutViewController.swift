@@ -8,9 +8,10 @@
 
 import UIKit
 
-class CheckoutViewController: UIViewController {
+class CheckoutViewController: UIViewController, UIPopoverPresentationControllerDelegate {
     
     var orderStringy = ""
+    var checkoutPopover = CheckoutOptionViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,10 +22,11 @@ class CheckoutViewController: UIViewController {
             for thing in item{
                orderStringy += " \(thing)"
             }
+            
         }
         
         //Create the placeOrder button
-        let menuButton = UIBarButtonItem(title: "PlaceOrder", style: .Plain, target: self, action: nil)
+        let menuButton = UIBarButtonItem(title: "PlaceOrder", style: .Plain, target: self, action: "orderTime")
         self.navigationItem.rightBarButtonItem = menuButton
         
         //Important Initializers
@@ -59,6 +61,11 @@ class CheckoutViewController: UIViewController {
                 
                 self.view.addSubview(labelCart)
             }
+            
+            //Create the properties for the popover
+            checkoutPopover.modalPresentationStyle = .Popover
+            checkoutPopover.preferredContentSize = CGSizeMake(200, 200)
+            
 
         }
         //Create The Dividing Line
@@ -77,10 +84,25 @@ class CheckoutViewController: UIViewController {
         
         }
     
-    func placeOrder(){
-        //let order = Order()
-        //order.item = orderStringy
-        //backendless.persistenceService.of(Order.ofClass()).save(order)
+    func orderTime(){
+        checkoutPopover.popoverPresentationController?.sourceView = self.view
+        let popoverMenuViewController = checkoutPopover.popoverPresentationController
+        popoverMenuViewController?.permittedArrowDirections = .Up
+        popoverMenuViewController?.delegate = self
+        popoverMenuViewController?.sourceRect = CGRect(
+            x: 250,
+            y: 70,
+            width: 1,
+            height: 1)
+        presentViewController(
+            checkoutPopover,
+            animated: true,
+            completion: nil)
+    }
+    
+    func adaptivePresentationStyleForPresentationController(
+        controller: UIPresentationController!) -> UIModalPresentationStyle {
+            return .None
     }
 
     override func didReceiveMemoryWarning() {

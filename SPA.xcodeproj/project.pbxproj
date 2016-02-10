@@ -25,6 +25,7 @@
 		DC5322A21C6153D8007049DC /* MenuITemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5322A11C6153D8007049DC /* MenuITemViewController.swift */; };
 		DC5322AA1C616A63007049DC /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5322A91C616A63007049DC /* CartTableViewController.swift */; };
 		DCA3CC381C698DD8008D0E4E /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA3CC371C698DD7008D0E4E /* CheckoutViewController.swift */; };
+		DCA3CC3A1C6B8FB6008D0E4E /* CheckoutOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA3CC391C6B8FB6008D0E4E /* CheckoutOptionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		DC5322A11C6153D8007049DC /* MenuITemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuITemViewController.swift; sourceTree = "<group>"; };
 		DC5322A91C616A63007049DC /* CartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
 		DCA3CC371C698DD7008D0E4E /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		DCA3CC391C6B8FB6008D0E4E /* CheckoutOptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutOptionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				DC4137701C630854009FE9B8 /* CartTableViewCell.swift */,
 				DC5322A91C616A63007049DC /* CartTableViewController.swift */,
 				DCA3CC371C698DD7008D0E4E /* CheckoutViewController.swift */,
+				DCA3CC391C6B8FB6008D0E4E /* CheckoutOptionViewController.swift */,
 				DC5322A11C6153D8007049DC /* MenuITemViewController.swift */,
 				DC5322971C607F93007049DC /* MenuTableViewController.swift */,
 				DC53229B1C613EE2007049DC /* MenuTableViewCell.swift */,
@@ -249,6 +252,7 @@
 			files = (
 				DC5322901C605009007049DC /* order.swift in Sources */,
 				DC5322A01C614846007049DC /* MenuDataSource.swift in Sources */,
+				DCA3CC3A1C6B8FB6008D0E4E /* CheckoutOptionViewController.swift in Sources */,
 				DC5322921C6066D9007049DC /* BackendCommands.swift in Sources */,
 				DC53229C1C613EE2007049DC /* MenuTableViewCell.swift in Sources */,
 				DC5322981C607F93007049DC /* MenuTableViewController.swift in Sources */,
