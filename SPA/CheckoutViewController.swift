@@ -8,10 +8,10 @@
 
 import UIKit
 
-class CheckoutViewController: UIViewController, UIPopoverPresentationControllerDelegate {
+class CheckoutViewController: UIViewController {
     
     var orderStringy = ""
-    var checkoutPopover = CheckoutOptionViewController()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +27,10 @@ class CheckoutViewController: UIViewController, UIPopoverPresentationControllerD
         
         //Create the placeOrder button
         let menuButton = UIBarButtonItem(title: "PlaceOrder", style: .Plain, target: self, action: "orderTime")
-        self.navigationItem.rightBarButtonItem = menuButton
-        
+        if orderCart.count > 0{
+            self.navigationItem.rightBarButtonItem = menuButton
+        }
+            
         //Important Initializers
         let height = UIScreen.mainScreen().bounds.height
         let width = UIScreen.mainScreen().bounds.width
@@ -62,10 +64,7 @@ class CheckoutViewController: UIViewController, UIPopoverPresentationControllerD
                 self.view.addSubview(labelCart)
             }
             
-            //Create the properties for the popover
-            checkoutPopover.modalPresentationStyle = .Popover
-            checkoutPopover.preferredContentSize = CGSizeMake(200, 200)
-            
+
 
         }
         //Create The Dividing Line
@@ -84,27 +83,28 @@ class CheckoutViewController: UIViewController, UIPopoverPresentationControllerD
         
         }
     
-    func orderTime(){
-        checkoutPopover.popoverPresentationController?.sourceView = self.view
-        let popoverMenuViewController = checkoutPopover.popoverPresentationController
-        popoverMenuViewController?.permittedArrowDirections = .Up
-        popoverMenuViewController?.delegate = self
-        popoverMenuViewController?.sourceRect = CGRect(
-            x: 250,
-            y: 70,
-            width: 1,
-            height: 1)
-        presentViewController(
-            checkoutPopover,
-            animated: true,
-            completion: nil)
+    
+    func goToMenu(){
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("options") as? OptionsViewController
+        self.navigationController?.showViewController(vc!, sender: true)
+
     }
     
-    func adaptivePresentationStyleForPresentationController(
-        controller: UIPresentationController!) -> UIModalPresentationStyle {
-            return .None
-    }
 
+    
+    func orderTime(){
+                var alertView = JSSAlertView().show(
+            self,
+            title: "Success",
+            text: "Order went through successfully",
+            buttonText: "OK",
+            color: UIColor.blueColor()
+        )
+
+        alertView.addAction(goToMenu)
+        
+
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

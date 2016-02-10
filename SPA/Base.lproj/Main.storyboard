@@ -36,7 +36,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MenuTableCell" id="bvL-s4-wEG" customClass="MenuTableViewCell" customModule="SPA" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bvL-s4-wEG" id="Wl2-0R-rUB">
                                     <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
@@ -61,10 +61,11 @@
                             <outlet property="delegate" destination="g8H-ga-1w8" id="fCB-q8-sc0"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="1Mc-Rb-fI0"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G8d-nt-RFl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1723" y="989"/>
+            <point key="canvasLocation" x="5227" y="871"/>
         </scene>
         <!--MenuI Tem View Controller-->
         <scene sceneID="CRl-BJ-nCC">
@@ -82,7 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Box-IE-jqE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2471" y="1037"/>
+            <point key="canvasLocation" x="5965" y="1077"/>
         </scene>
         <!--Checkout View Controller-->
         <scene sceneID="hGU-q1-A51">
@@ -100,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SGE-MB-JCV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3193" y="371"/>
+            <point key="canvasLocation" x="5629" y="371"/>
         </scene>
         <!--Cart Table View Controller-->
         <scene sceneID="of0-2o-1od">
@@ -139,7 +140,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KNx-6R-cdE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3202" y="1037"/>
+            <point key="canvasLocation" x="6450" y="1037"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="GvQ-Lo-bXy">
@@ -159,6 +160,29 @@
             </objects>
             <point key="canvasLocation" x="1763" y="1691"/>
         </scene>
+        <!--Options View Controller-->
+        <scene sceneID="tdP-7i-gtV">
+            <objects>
+                <viewController storyboardIdentifier="options" id="Tsx-cJ-7Ik" customClass="OptionsViewController" customModule="SPA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ChM-7i-tqb"/>
+                        <viewControllerLayoutGuide type="bottom" id="yNH-kX-IHA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2lN-tO-dYX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QNa-AS-ZIZ"/>
+                    <connections>
+                        <segue destination="B7S-aJ-evo" kind="show" identifier="optionToMenu" id="SBY-wi-R2R"/>
+                        <segue destination="QXR-lb-hZI" kind="show" identifier="optionToLogin" id="KYx-U2-Duj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pbN-1c-pfG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3325" y="1350"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Dqk-s8-awr">
             <objects>
@@ -176,6 +200,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uhH-Io-Zgx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="325" y="988"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qfJ-GZ-w6L">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="B7S-aJ-evo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zRh-cG-Fxl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="g8H-ga-1w8" kind="relationship" relationship="rootViewController" id="ZDu-TN-bTE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S7m-UV-0H8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4415" y="871"/>
         </scene>
     </scenes>
 </document>
