@@ -14,7 +14,7 @@ class MenuITemViewController: UIViewController, UIPickerViewDataSource, UIPicker
     var itemPrice = UILabel()
     var itemPricePerQuantity = UILabel()
     var pickerView = UIPickerView()
-    var pickerDataSource = ["1", "2", "3", "4","5"]
+    var colors = ["1","2","3","4","5"] //For the view picker
     var menuItem:[String] = []
     var Quantity = "1"
     
@@ -93,12 +93,15 @@ class MenuITemViewController: UIViewController, UIPickerViewDataSource, UIPicker
     }
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return pickerDataSource.count;
+        return colors.count
     }
     
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
-        Quantity = pickerDataSource[row]
-        return pickerDataSource[row]
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return colors[row]
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        Quantity = colors[row]
     }
 
 }
