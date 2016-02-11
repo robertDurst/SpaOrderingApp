@@ -46,10 +46,16 @@ class CartTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return orderCart.count
+        return orderCart.count+1
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        var price = 0.00
+        for item in orderCart{
+            price += Double(item[1])! * Double(item[2])!
+            
+        }
         
         let cell =
         self.tableView.dequeueReusableCellWithIdentifier(
@@ -57,7 +63,16 @@ class CartTableViewController: UITableViewController {
             as! CartTableViewCell
         
         let row = indexPath.row
-        cell.cartLabel.text = orderCart[row][0]
+        
+        if row < orderCart.count{
+            cell.cartLabel.text = orderCart[row][0]
+            cell.cartQuantityLabel.text = "Quantity: \(orderCart[row][2])"
+        }
+        else{
+            cell.cartLabel.text = "Price: $\(price)"
+            cell.cartQuantityLabel.text = ""
+        }
+        
         return cell
     }
     

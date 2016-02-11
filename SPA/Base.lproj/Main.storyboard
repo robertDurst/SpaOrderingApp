@@ -120,15 +120,22 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7M-5D-7ZQ">
-                                            <rect key="frame" x="8" y="11" width="592" height="21"/>
+                                            <rect key="frame" x="8" y="11" width="381" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLd-7j-ADl">
+                                            <rect key="frame" x="18" y="22" width="519" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="cartLabel" destination="I7M-5D-7ZQ" id="o3Q-5b-nWw"/>
+                                    <outlet property="cartQuantityLabel" destination="dLd-7j-ADl" id="ACA-ga-aOG"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -140,7 +147,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KNx-6R-cdE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6450" y="1037"/>
+            <point key="canvasLocation" x="6559" y="1038"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="GvQ-Lo-bXy">

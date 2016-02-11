@@ -11,10 +11,14 @@ import UIKit
 class CartTableViewCell: UITableViewCell {
 
     @IBOutlet weak var cartLabel: UILabel!
+    @IBOutlet weak var cartQuantityLabel: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        cartQuantityLabel.textAlignment = .Center
+        
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

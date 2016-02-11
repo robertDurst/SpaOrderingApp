@@ -84,24 +84,23 @@ class CheckoutViewController: UIViewController {
         }
     
     
-    func goToMenu(){
-        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("options") as? OptionsViewController
-        self.navigationController?.showViewController(vc!, sender: true)
-
-    }
     
 
     
     func orderTime(){
-                var alertView = JSSAlertView().show(
-            self,
-            title: "Success",
-            text: "Order went through successfully",
-            buttonText: "OK",
-            color: UIColor.blueColor()
-        )
+        
+        
+        orderCart = []
+        
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("options") as? OptionsViewController
+        self.navigationController?.showViewController(vc!, sender: true)
 
-        alertView.addAction(goToMenu)
+        
+        let alertController = UIAlertController(title: "Success", message:
+            "Your order is placed!", preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+        self.presentViewController(alertController, animated: true, completion: nil)
+   
         
 
     }

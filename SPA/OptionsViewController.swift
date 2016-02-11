@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MessageUI
 
 class OptionsViewController: UIViewController {
 
@@ -19,6 +20,7 @@ class OptionsViewController: UIViewController {
         //Important Initializers
         let height = UIScreen.mainScreen().bounds.height
         let width = UIScreen.mainScreen().bounds.width
+        self.navigationController?.navigationBarHidden = true
         
         //Create the menu button
         menuButton = UIButton(frame: CGRectMake(0, 0, width, height/2))
