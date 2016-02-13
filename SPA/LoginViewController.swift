@@ -125,17 +125,18 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             response: { (let registeredUser : BackendlessUser!) -> () in
                 let vc = self.storyboard?.instantiateViewControllerWithIdentifier("MenuTable") as? MenuTableViewController
                 SwiftSpinner.hide()
+                backendless.userService.setStayLoggedIn( true )
+
                 self.navigationController?.pushViewController(vc!, animated: true)
                            },
             error: { (let fault : Fault!) -> () in
                 SwiftSpinner.hide()
-                JSSAlertView().show(
-                    self,
-                    title: "Error",
-                    text: "\(fault.detail)",
-                    buttonText: "OK",
-                    color: UIColor.redColor()
-                )
+       
+                
+                let alertController = UIAlertController(title: "Incorrect Login", message:
+                    "Please Try Again", preferredStyle: UIAlertControllerStyle.Alert)
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+                self.presentViewController(alertController, animated: true, completion: nil)
                 self.passwordTextField.text = ""
 
             }

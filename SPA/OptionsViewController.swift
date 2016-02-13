@@ -52,9 +52,32 @@ class OptionsViewController: UIViewController {
     func LogoutNow(){
         orderCart = []
         performSegueWithIdentifier("optionToLogin", sender: nil)
-
+        
         
     }
+    
+    func logoutUserAsync() {
+        
+        backendless.userService.login(
+            currentUser.email, password:currentUser.password,
+            response: { ( user : BackendlessUser!) -> () in
+                print("User has been logged in (ASYNC): \(user)")
+                
+                backendless.userService.logout(
+                    { ( user : AnyObject!) -> () in
+                        print("Current user session expired.")
+                    },
+                    error: { ( fault : Fault!) -> () in
+                        print("Server reported an error: \(fault)")
+                    }
+                )
+            },
+            error: { ( fault : Fault!) -> () in
+                print("Server reported an error: \(fault)")
+            }
+        )
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

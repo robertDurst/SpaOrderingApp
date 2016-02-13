@@ -69,7 +69,7 @@ class CartTableViewController: UITableViewController {
             cell.cartQuantityLabel.text = "Quantity: \(orderCart[row][2])"
         }
         else{
-            cell.cartLabel.text = "Price: $\(price)"
+            cell.cartLabel.text = "Price: $\(price)0"
             cell.cartQuantityLabel.text = ""
         }
         
@@ -85,9 +85,28 @@ class CartTableViewController: UITableViewController {
         let vc = self.storyboard?.instantiateViewControllerWithIdentifier("checkout") as? CheckoutViewController
         self.navigationController?.pushViewController(vc!, animated: true)
     }
-    
+/*
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath)
+    
     {
+        if editingStyle == .Delete && orderCart.count > 0 && indexPath.row < orderCart.count
+        {
+            orderCart.removeAtIndex(indexPath.row)
+            self.tableView.reloadData()
+        }
+    }
+    
+*/
+    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        if orderCart.count > 0 && indexPath.row < orderCart.count{
+            return true
+        }
+        else{
+            return false
+        }
+    }
+
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete && orderCart.count > 0 && indexPath.row < orderCart.count
         {
             orderCart.removeAtIndex(indexPath.row)

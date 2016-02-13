@@ -11,6 +11,7 @@ import UIKit
 let manager = MenuDataSource()
 let menu = manager.fetchingFirstPage()
 var orderCart: Array<[String]> = []
+let currentUser = backendless.userService.currentUser
 
 
 class MenuTableViewController: UITableViewController {

@@ -76,7 +76,7 @@ class CheckoutViewController: UIViewController {
 
         
         let labelCart = UILabel(frame:CGRectMake(5, height-25, width-10, 25))
-        labelCart.text = "Total $\(price)"
+        labelCart.text = "Total $\(price)0"
         labelCart.textAlignment = .Right
         labelCart.font = UIFont(name: "Times New Roman", size: 30)
         self.view.addSubview(labelCart)
@@ -94,7 +94,8 @@ class CheckoutViewController: UIViewController {
         
         let vc = self.storyboard?.instantiateViewControllerWithIdentifier("options") as? OptionsViewController
         self.navigationController?.showViewController(vc!, sender: true)
-
+        
+        
         
         let alertController = UIAlertController(title: "Success", message:
             "Your order is placed!", preferredStyle: UIAlertControllerStyle.Alert)
