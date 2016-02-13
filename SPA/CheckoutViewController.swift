@@ -90,12 +90,36 @@ class CheckoutViewController: UIViewController {
     func orderTime(){
         
         
-        orderCart = []
+    
         
         let vc = self.storyboard?.instantiateViewControllerWithIdentifier("options") as? OptionsViewController
         self.navigationController?.showViewController(vc!, sender: true)
         
+        //Have to convert Array into string to send to Backendless
+        var orderCartString = "[ "
+        for item in orderCart{
+            
+            var countLev2 = 1
+            var counter = 1
+            for thing in item{
+                if counter == 1{
+                    orderCartString += "[\(thing), "
+                }else if counter == 3{
+                    orderCartString += "\(thing)]  "
+                }
+                counter += 1
+                }
+                countLev2 += 1
+            }
         
+            orderCartString += "]"
+
+        
+        let order = Order()
+        order.item = orderCartString
+        backendless.persistenceService.of(Order.ofClass()).save(order)
+        
+        orderCart = []
         
         let alertController = UIAlertController(title: "Success", message:
             "Your order is placed!", preferredStyle: UIAlertControllerStyle.Alert)
