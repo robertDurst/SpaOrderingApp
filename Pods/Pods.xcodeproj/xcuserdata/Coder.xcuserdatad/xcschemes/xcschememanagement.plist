@@ -9,7 +9,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PageMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Stripe.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,7 +37,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1B87DBD91CD9BDB1E1FE914F8D5268FD</key>
+		<key>21C461B0CAD90DE64B07A5D212C5F829</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>527D5B6F089D7DC875993A373582F62C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -37,12 +52,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>99CB6069823F1D0CC00971CC4D7EBDDA</key>
+		<key>909F138A586DC4F9833B746F318AF340</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CAD0829DA2B94C414A049FD91E391BD0</key>
+		<key>9583D690A60DB9526A4EADDACA612A13</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EC3AE32E693E1D9AE6D502C8064CC03F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

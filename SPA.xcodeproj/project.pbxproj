@@ -26,6 +26,7 @@
 		DC5322AA1C616A63007049DC /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5322A91C616A63007049DC /* CartTableViewController.swift */; };
 		DCA3CC381C698DD8008D0E4E /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA3CC371C698DD7008D0E4E /* CheckoutViewController.swift */; };
 		DCA3CC3C1C6BCBE9008D0E4E /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA3CC3B1C6BCBE9008D0E4E /* OptionsViewController.swift */; };
+		DCAE89071C824A6700295121 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAE89061C824A6700295121 /* PaymentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		DC5322A91C616A63007049DC /* CartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
 		DCA3CC371C698DD7008D0E4E /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		DCA3CC3B1C6BCBE9008D0E4E /* OptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
+		DCAE89061C824A6700295121 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				DC53229D1C614388007049DC /* menu.swift */,
 				DC53229F1C614846007049DC /* MenuDataSource.swift */,
 				DC5322811C604BD4007049DC /* Main.storyboard */,
+				DCAE89061C824A6700295121 /* PaymentViewController.swift */,
 				DCA3CC3B1C6BCBE9008D0E4E /* OptionsViewController.swift */,
 				DC4137701C630854009FE9B8 /* CartTableViewCell.swift */,
 				DC5322A91C616A63007049DC /* CartTableViewController.swift */,
@@ -253,6 +256,7 @@
 				DC5322901C605009007049DC /* order.swift in Sources */,
 				DC5322A01C614846007049DC /* MenuDataSource.swift in Sources */,
 				DC5322921C6066D9007049DC /* BackendCommands.swift in Sources */,
+				DCAE89071C824A6700295121 /* PaymentViewController.swift in Sources */,
 				DC53229C1C613EE2007049DC /* MenuTableViewCell.swift in Sources */,
 				DC5322981C607F93007049DC /* MenuTableViewController.swift in Sources */,
 				DC5322961C607F6D007049DC /* SignupViewController.swift in Sources */,

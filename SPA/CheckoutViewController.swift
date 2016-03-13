@@ -115,9 +115,9 @@ class CheckoutViewController: UIViewController {
             orderCartString += "]"
 
         
-        let order = Order()
-        order.item = orderCartString
-        backendless.persistenceService.of(Order.ofClass()).save(order)
+        let order = toApprove()
+        order.item = String(orderCart)
+        backendless.persistenceService.of(toApprove.ofClass()).save(order)
         
         orderCart = []
         

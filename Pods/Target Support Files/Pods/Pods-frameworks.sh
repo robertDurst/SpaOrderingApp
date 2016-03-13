@@ -85,11 +85,15 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods/JSSAlertView.framework"
+  install_framework "Pods/PageMenu.framework"
+  install_framework "Pods/Stripe.framework"
   install_framework "Pods/SwiftSpinner.framework"
   install_framework "Pods/TextFieldEffects.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods/JSSAlertView.framework"
+  install_framework "Pods/PageMenu.framework"
+  install_framework "Pods/Stripe.framework"
   install_framework "Pods/SwiftSpinner.framework"
   install_framework "Pods/TextFieldEffects.framework"
 fi

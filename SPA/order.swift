@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Order: NSObject
+class toApprove: NSObject
 {
     var objectId: String?
     var item: String?
