@@ -149,24 +149,6 @@
             </objects>
             <point key="canvasLocation" x="7371" y="1038"/>
         </scene>
-        <!--Payment View Controller-->
-        <scene sceneID="AT4-va-fsl">
-            <objects>
-                <viewController storyboardIdentifier="PaymentViewController" id="CtR-dq-XSy" customClass="PaymentViewController" customModule="SPA" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="BK2-kD-Tz9"/>
-                        <viewControllerLayoutGuide type="bottom" id="FBY-If-F0I"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="cPK-EQ-Wxq">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gIF-hq-xoX" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="8124" y="1002"/>
-        </scene>
         <!--Signup View Controller-->
         <scene sceneID="GvQ-Lo-bXy">
             <objects>
