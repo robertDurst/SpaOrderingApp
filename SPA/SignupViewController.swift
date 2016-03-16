@@ -9,13 +9,15 @@
 import UIKit
 import TextFieldEffects
 import SwiftSpinner
+import Stripe
 
-class SignupViewController: UIViewController, UITextFieldDelegate {
+class SignupViewController: UIViewController, UITextFieldDelegate, STPPaymentCardTextFieldDelegate {
     var emailUser = YokoTextField()
     var passwordUser = YokoTextField()
     var confirmPassword = YokoTextField()
     var signupButton = UIButton()
     let tapRecKeyBoardHider = UITapGestureRecognizer()
+    let paymentTextField = STPPaymentCardTextField()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,7 +67,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
         self.view.addSubview(confirmPassword)
         
         //Create the signup button
-        signupButton = UIButton(frame: CGRectMake(5, 70+height*3/5+15 + height/10, width-10, 35))
+        signupButton = UIButton(frame: CGRectMake(5, 70+height*3/5+50 + height/10, width-10, 35))
         signupButton.titleLabel!.font = UIFont(name: "Times New Roman", size: 40)
         signupButton.setTitle("Signup", forState: UIControlState.Normal)
         signupButton.setTitleColor(.grayColor(), forState: UIControlState.Normal)
@@ -73,6 +75,19 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
         signupButton.addTarget(self, action: "Signup:", forControlEvents: .TouchUpInside)
         self.view.addSubview(signupButton)
         
+       
+        //Create the background for the payment infor textfield
+        
+        
+        //All that is needed for the payment info textfield
+        paymentTextField.frame = CGRectMake(5, 70+height*3/5+15, CGRectGetWidth(self.view.frame) - 10, 80)
+        paymentTextField.backgroundColor = .grayColor()
+        paymentTextField.textColor = .blackColor()
+        paymentTextField.placeholderColor = .darkGrayColor()
+        paymentTextField.font = UIFont.italicSystemFontOfSize(26)
+        paymentTextField.delegate = self
+        view.addSubview(paymentTextField)
+            
         
         
         
@@ -167,33 +182,49 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
     //Method for singing up
     func registerUserAsync() {
         
-        let user = BackendlessUser()
-        user.email = emailUser.text
-        user.password = passwordUser.text
+        let card = paymentTextField.card
         
-        backendless.userService.registering(user,
-            response: { (registeredUser : BackendlessUser!) -> () in
-                SwiftSpinner.hide()
-                let vc = self.storyboard?.instantiateViewControllerWithIdentifier("Login") as? LoginViewController
-                self.navigationController?.pushViewController(vc!, animated: true)
-                JSSAlertView().success(
-                    self,
-                    title: "Successful Signup",
-                    text: "Please Check Your Email to Confirm and Then Login",
-                    buttonText: "OK")
-
-            },
-            error: { ( fault : Fault!) -> () in
-                SwiftSpinner.hide()
-                JSSAlertView().show(
-                    self,
-                    title: "Error",
-                    text: "\(fault.detail)",
-                    buttonText: "OK",
-                    color: UIColor.redColor()
+        STPAPIClient.sharedClient().createTokenWithCard(card!) { (token, error) -> Void in
+            if let error = error  {
+                //handleError(error)
+            }
+            else if let token = token {
+                //createBackendChargeWithToken(token) { status in
+                let user = BackendlessUser()
+                user.email = self.emailUser.text
+                user.password = self.passwordUser.text
+                user.setProperty("stripeToken", object: String(token))
+                
+                backendless.userService.registering(user,
+                    response: { (registeredUser : BackendlessUser!) -> () in
+                        SwiftSpinner.hide()
+                        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("Login") as? LoginViewController
+                        self.navigationController?.pushViewController(vc!, animated: true)
+                        JSSAlertView().success(
+                            self,
+                            title: "Successful Signup",
+                            text: "Please Check Your Email to Confirm and Then Login",
+                            buttonText: "OK")
+                        
+                    },
+                    error: { ( fault : Fault!) -> () in
+                        SwiftSpinner.hide()
+                        JSSAlertView().show(
+                            self,
+                            title: "Error",
+                            text: "\(fault.detail)",
+                            buttonText: "OK",
+                            color: UIColor.redColor()
+                        )
+                    } 
                 )
-            } 
-        ) 
+                
+                
+            }
+            
+            
+        }
+
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -220,6 +251,8 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
         self.view.frame = CGRectOffset(self.view.frame, 0,  movement)
         UIView.commitAnimations()
     }
+    
+    //To get the Stripe Token
 
 }
 

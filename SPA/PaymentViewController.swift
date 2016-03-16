@@ -31,22 +31,25 @@ class PaymentViewController: UIViewController, STPPaymentCardTextFieldDelegate {
         saveButton.addTarget(self, action: "getToken", forControlEvents: .TouchUpInside)
         self.view.addSubview(saveButton)
 
-        self.view.addSubview(saveButton)
 
     }
     
+    
+    
     func getToken(){
+
+        
         if let card = paymentTextField.card {
             do {
-                try STPCardValidator()
                
                 STPAPIClient.sharedClient().createTokenWithCard(card) { (token, error) -> Void in
                     if let error = error  {
                         //handleError(error)
+                        print(error)
                     }
                     else if let token = token {
                         //createBackendChargeWithToken(token) { status in
-                        
+                        print(token)
                     }
                 }
             } catch {
@@ -54,9 +57,9 @@ class PaymentViewController: UIViewController, STPPaymentCardTextFieldDelegate {
             }
 
             }
-        }
-    }
-    
+        
+}
+}
         
 
     

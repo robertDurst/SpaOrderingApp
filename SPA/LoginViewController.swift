@@ -123,7 +123,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         backendless.userService.login(
             String(usernameTextField.text!), password:String(passwordTextField.text!),
             response: { (let registeredUser : BackendlessUser!) -> () in
-                let vc = self.storyboard?.instantiateViewControllerWithIdentifier("MenuTable") as? MenuTableViewController
+                let vc = self.storyboard?.instantiateViewControllerWithIdentifier("options") as? OptionsViewController
                 SwiftSpinner.hide()
                 backendless.userService.setStayLoggedIn( true )
 
