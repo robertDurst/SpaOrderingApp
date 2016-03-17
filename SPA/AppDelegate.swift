@@ -11,14 +11,14 @@ import Stripe
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    let APP_ID = "EEBDB8F4-E9E0-E117-FF51-3C7AA05AEF00"
-    let SECRET_KEY = "9532DE48-E9DB-4E23-FF92-C77E162E9C00"; let VERSION_NUM = "v1"
+    let APP_ID = "268B34D8-685A-30CF-FFB4-6E19529C2C00"
+    let SECRET_KEY = "6EE6653D-1D12-02EE-FFA4-6976AFF61700"; let VERSION_NUM = "v1"
     var backendless = Backendless.sharedInstance()
     var window: UIWindow?
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         backendless.initApp(APP_ID, secret:SECRET_KEY, version:VERSION_NUM) // if you don’t need the MediaService – you must remove the next line
         backendless.mediaService = MediaService()
-        Stripe.setDefaultPublishableKey("pk_test_QmT0SgnWBSmJ0bay1F8t2YYJ")
+        Stripe.setDefaultPublishableKey("pk_test_7SMf6wzsoBUuMWeJnBrRBg6F")
         return true
     }
 
