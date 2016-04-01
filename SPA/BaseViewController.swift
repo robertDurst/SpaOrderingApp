@@ -16,6 +16,11 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.navigationBarHidden = true
+        //self.navigationItem.setHidesBackButton(true, animated:true)
+
+
+        
         
         
         // Array to keep track of controllers in page menu
@@ -27,17 +32,15 @@ class BaseViewController: UIViewController {
         // Make sure the title property of all view controllers is set
         // Example:
        
-        var controller : UIViewController = self.storyboard?.instantiateViewControllerWithIdentifier("options") as! OptionsViewController
-        controller.title = "Options"
+        var controller : UIViewController = self.storyboard?.instantiateViewControllerWithIdentifier("optView") as!
+            UINavigationController
+        controller.title = "Main"
         controllerArray.append(controller)
         
-        controller = self.storyboard?.instantiateViewControllerWithIdentifier("Menu") as! UINavigationController
-        controller.title = "Menu"
+        controller = self.storyboard?.instantiateViewControllerWithIdentifier("Status") as! StatusTableViewController
+        controller.title = "Order Status"
         controllerArray.append(controller)
-        
-        controller = self.storyboard?.instantiateViewControllerWithIdentifier("cart") as! CartTableViewController
-        controller.title = "Cart"
-        controllerArray.append(controller)
+
         
         // Customize page menu to your liking (optional) or use default settings by sending nil for 'options' in the init
         // Example:
@@ -49,6 +52,10 @@ class BaseViewController: UIViewController {
         
         // Initialize page menu with controller array, frame, and optional parameters
         pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: CGRectMake(0.0, 0.0, self.view.frame.width, self.view.frame.height), pageMenuOptions: parameters)
+        
+        
+
+        
         
         // Lastly add page menu as subview of base view controller view
         // or use pageMenu controller in you view hierachy as desired

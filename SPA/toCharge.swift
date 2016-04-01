@@ -8,10 +8,9 @@
 
 import Foundation
 
-class Order: NSObject
+class toCharge: NSObject
 {
     var objectId: String?
     var item: String?
-    var authorEmail: String?
     var ownerId: String?
 }

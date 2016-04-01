@@ -167,6 +167,24 @@
             </objects>
             <point key="canvasLocation" x="1763" y="1691"/>
         </scene>
+        <!--StatusItemViewer-->
+        <scene sceneID="wwi-Ys-TRX">
+            <objects>
+                <viewController storyboardIdentifier="StatusItemViewer" title="StatusItemViewer" id="ste-qb-fqH" customClass="StatusItemViewController" customModule="SPA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kCe-B3-eme"/>
+                        <viewControllerLayoutGuide type="bottom" id="8p2-0a-a7R"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E0S-ua-uhh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mKS-Pj-qf4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5631" y="3004"/>
+        </scene>
         <!--Options-->
         <scene sceneID="tdP-7i-gtV">
             <objects>
@@ -186,6 +204,7 @@
                         <segue destination="QXR-lb-hZI" kind="show" identifier="optionToLogin" id="KYx-U2-Duj"/>
                         <segue destination="NSO-hP-x5z" kind="show" identifier="optionsToSettings" id="UsF-oG-FLA"/>
                         <segue destination="MBe-M3-Fhi" kind="show" identifier="optionsToPayment" id="Ril-Tf-FHt"/>
+                        <segue destination="agM-EJ-34K" kind="show" identifier="OptionsToStatus" id="7Bw-oh-vlH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pbN-1c-pfG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -195,7 +214,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Dqk-s8-awr">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QXR-lb-hZI" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="StartNavController" automaticallyAdjustsScrollViewInsets="NO" id="QXR-lb-hZI" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="a6k-Lq-teq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -282,10 +301,50 @@
             </objects>
             <point key="canvasLocation" x="4861" y="2145"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Status Table View Controller-->
+        <scene sceneID="VuR-K7-bjl">
+            <objects>
+                <tableViewController storyboardIdentifier="Status" id="agM-EJ-34K" customClass="StatusTableViewController" customModule="SPA" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="PRu-nI-Ppk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StatusTableCell" id="9Bb-bS-dFm" customClass="StatusTableViewCell" customModule="SPA" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Bb-bS-dFm" id="7FK-br-Tgg">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IiG-oR-Iqc">
+                                            <rect key="frame" x="8" y="14" width="584" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="StatusLabel" destination="IiG-oR-Iqc" id="2AI-6w-i8l"/>
+                                    <segue destination="ste-qb-fqH" kind="show" id="HKa-iS-OjE"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="agM-EJ-34K" id="Yed-Fj-ijq"/>
+                            <outlet property="delegate" destination="agM-EJ-34K" id="OXV-Qf-SIb"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zaf-pc-gOr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4965" y="3004"/>
+        </scene>
+        <!--optView-->
         <scene sceneID="PKo-rA-tSr">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="laa-Hd-jqI" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="optView" title="optView" automaticallyAdjustsScrollViewInsets="NO" id="laa-Hd-jqI" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="J4I-JY-2Uo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:StatusTableViewController.swift">
+   </FileRef>
+   <FileRef
       location = "group:SPA.xcodeproj">
    </FileRef>
    <FileRef

@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A8ACF31D9E0800B1EF708996'
-               BlueprintName = 'TextFieldEffects'
+               BlueprintIdentifier = 'E2AC12C4F4EA87EE83188371'
+               BlueprintName = 'PagingMenuController-PagingMenuController'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'TextFieldEffects.framework'>
+               BuildableName = 'PagingMenuController.bundle'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

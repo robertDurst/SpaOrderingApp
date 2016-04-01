@@ -26,6 +26,14 @@
 		DC5322A21C6153D8007049DC /* MenuITemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5322A11C6153D8007049DC /* MenuITemViewController.swift */; };
 		DC5322AA1C616A63007049DC /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5322A91C616A63007049DC /* CartTableViewController.swift */; };
 		DC5D216D1CAE26ED008C6A63 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5D216C1CAE26ED008C6A63 /* BaseViewController.swift */; };
+		DC5D21711CAED9F5008C6A63 /* StatusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5D21701CAED9F5008C6A63 /* StatusTableViewController.swift */; };
+		DC5D21731CAEDAB9008C6A63 /* StatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5D21721CAEDAB9008C6A63 /* StatusTableViewCell.swift */; };
+		DC5D21791CAEE13F008C6A63 /* StatusChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5D21781CAEE13E008C6A63 /* StatusChecker.swift */; };
+		DC5D217D1CAEE250008C6A63 /* toApprove.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5D217C1CAEE250008C6A63 /* toApprove.swift */; };
+		DC5D217F1CAEE46B008C6A63 /* toCharge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5D217E1CAEE46B008C6A63 /* toCharge.swift */; };
+		DC5D21811CAEE4CC008C6A63 /* toCook.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5D21801CAEE4CC008C6A63 /* toCook.swift */; };
+		DC5D21831CAEE4DF008C6A63 /* toPickup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5D21821CAEE4DF008C6A63 /* toPickup.swift */; };
+		DC5D21871CAF0625008C6A63 /* StatusItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5D21861CAF0625008C6A63 /* StatusItemViewController.swift */; };
 		DCA3CC381C698DD8008D0E4E /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA3CC371C698DD7008D0E4E /* CheckoutViewController.swift */; };
 		DCA3CC3C1C6BCBE9008D0E4E /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA3CC3B1C6BCBE9008D0E4E /* OptionsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -54,6 +62,14 @@
 		DC5322A11C6153D8007049DC /* MenuITemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuITemViewController.swift; sourceTree = "<group>"; };
 		DC5322A91C616A63007049DC /* CartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
 		DC5D216C1CAE26ED008C6A63 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DC5D21701CAED9F5008C6A63 /* StatusTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusTableViewController.swift; sourceTree = "<group>"; };
+		DC5D21721CAEDAB9008C6A63 /* StatusTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusTableViewCell.swift; sourceTree = "<group>"; };
+		DC5D21781CAEE13E008C6A63 /* StatusChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusChecker.swift; sourceTree = "<group>"; };
+		DC5D217C1CAEE250008C6A63 /* toApprove.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = toApprove.swift; sourceTree = "<group>"; };
+		DC5D217E1CAEE46B008C6A63 /* toCharge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = toCharge.swift; sourceTree = "<group>"; };
+		DC5D21801CAEE4CC008C6A63 /* toCook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = toCook.swift; sourceTree = "<group>"; };
+		DC5D21821CAEE4DF008C6A63 /* toPickup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = toPickup.swift; sourceTree = "<group>"; };
+		DC5D21861CAF0625008C6A63 /* StatusItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusItemViewController.swift; sourceTree = "<group>"; };
 		DCA3CC371C698DD7008D0E4E /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		DCA3CC3B1C6BCBE9008D0E4E /* OptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,10 +124,18 @@
 				DC53228F1C605009007049DC /* order.swift */,
 				DC53229D1C614388007049DC /* menu.swift */,
 				DC53229F1C614846007049DC /* MenuDataSource.swift */,
+				DC5D21781CAEE13E008C6A63 /* StatusChecker.swift */,
+				DC5D21801CAEE4CC008C6A63 /* toCook.swift */,
+				DC5D21821CAEE4DF008C6A63 /* toPickup.swift */,
+				DC5D217E1CAEE46B008C6A63 /* toCharge.swift */,
+				DC5D217C1CAEE250008C6A63 /* toApprove.swift */,
 				DC5322811C604BD4007049DC /* Main.storyboard */,
+				DC5D21861CAF0625008C6A63 /* StatusItemViewController.swift */,
+				DC5D21701CAED9F5008C6A63 /* StatusTableViewController.swift */,
 				DC5D216C1CAE26ED008C6A63 /* BaseViewController.swift */,
 				DC398D561C98F57500E0659A /* SettingsViewController.swift */,
 				DCA3CC3B1C6BCBE9008D0E4E /* OptionsViewController.swift */,
+				DC5D21721CAEDAB9008C6A63 /* StatusTableViewCell.swift */,
 				DC4137701C630854009FE9B8 /* CartTableViewCell.swift */,
 				DC5322A91C616A63007049DC /* CartTableViewController.swift */,
 				DCA3CC371C698DD7008D0E4E /* CheckoutViewController.swift */,
@@ -257,22 +281,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC5322901C605009007049DC /* order.swift in Sources */,
+				DC5D21731CAEDAB9008C6A63 /* StatusTableViewCell.swift in Sources */,
 				DC5322A01C614846007049DC /* MenuDataSource.swift in Sources */,
+				DC5D21811CAEE4CC008C6A63 /* toCook.swift in Sources */,
 				DC5322921C6066D9007049DC /* BackendCommands.swift in Sources */,
 				DC53229C1C613EE2007049DC /* MenuTableViewCell.swift in Sources */,
 				DC5322981C607F93007049DC /* MenuTableViewController.swift in Sources */,
 				DC5322961C607F6D007049DC /* SignupViewController.swift in Sources */,
+				DC5D21831CAEE4DF008C6A63 /* toPickup.swift in Sources */,
 				DCA3CC381C698DD8008D0E4E /* CheckoutViewController.swift in Sources */,
 				DC5D216D1CAE26ED008C6A63 /* BaseViewController.swift in Sources */,
 				DC5322941C606D5A007049DC /* LoginViewController.swift in Sources */,
+				DC5D21871CAF0625008C6A63 /* StatusItemViewController.swift in Sources */,
+				DC5D21711CAED9F5008C6A63 /* StatusTableViewController.swift in Sources */,
 				DC53227E1C604BD4007049DC /* AppDelegate.swift in Sources */,
+				DC5D217F1CAEE46B008C6A63 /* toCharge.swift in Sources */,
 				DCA3CC3C1C6BCBE9008D0E4E /* OptionsViewController.swift in Sources */,
+				DC5D217D1CAEE250008C6A63 /* toApprove.swift in Sources */,
 				DC5322AA1C616A63007049DC /* CartTableViewController.swift in Sources */,
 				DC398D571C98F57500E0659A /* SettingsViewController.swift in Sources */,
 				DC4137711C630854009FE9B8 /* CartTableViewCell.swift in Sources */,
 				DC53229A1C608BA5007049DC /* JSSAlertView.swift in Sources */,
 				DC5322A21C6153D8007049DC /* MenuITemViewController.swift in Sources */,
 				DC53229E1C614388007049DC /* menu.swift in Sources */,
+				DC5D21791CAEE13F008C6A63 /* StatusChecker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,7 +26,7 @@ class MenuTableViewController: UITableViewController {
         
         //Create the cart button
         let menuButton = UIBarButtonItem(title: "Cart", style: .Plain, target: self, action: "goToCart:")
-        self.navigationItem.rightBarButtonItem = menuButton
+        //self.navigationItem.rightBarButtonItem = menuButton
         
     }
 
@@ -75,6 +75,32 @@ class MenuTableViewController: UITableViewController {
                 
                 
             }
+    }
+    
+    func ToCart(){
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("cart") as? CartTableViewController
+        self.navigationController?.pushViewController(vc!, animated: true)
+        
+    }
+    
+    func ToOptions(){
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("options") as? OptionsViewController
+        self.navigationController?.pushViewController(vc!, animated: true)
+    }
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        //Create Cart Button
+        let cartButton = UIBarButtonItem(title: "(Current Cart)", style: .Plain, target: self, action: "ToCart")
+        let optionButton = UIBarButtonItem(title: "(Options Menu)", style: .Plain, target: self, action: "ToOptions")
+        self.setToolbarItems([cartButton,optionButton], animated: false)
+        super.viewWillAppear(animated);
+        self.navigationController?.setToolbarHidden(false, animated: animated)
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated);
+        self.navigationController?.setToolbarHidden(true, animated: animated)
     }
 
 }

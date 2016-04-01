@@ -2,6 +2,7 @@ PODS:
   - Backendless-ios-SDK (3.0.6)
   - JSSAlertView (1.0)
   - PageMenu (1.2.9)
+  - PagingMenuController (0.8.0)
   - Stripe (6.2.0):
     - Stripe/Core (= 6.2.0)
   - Stripe/Core (6.2.0)
@@ -12,6 +13,7 @@ DEPENDENCIES:
   - Backendless-ios-SDK (~> 3.0.0)
   - JSSAlertView
   - PageMenu
+  - PagingMenuController
   - Stripe
   - SwiftSpinner
   - TextFieldEffects
@@ -20,6 +22,7 @@ SPEC CHECKSUMS:
   Backendless-ios-SDK: e9dc91a497a2fe1b570377dfa88af380acff01c1
   JSSAlertView: f553f2631072e657aa9e841a8db8161a6ee673d7
   PageMenu: ba19ff267f7a19e444e93c20a7847b78954a7011
+  PagingMenuController: 1a9ff8ad0ab9704f215706997c1a624bc951f508
   Stripe: 275524137e6c4cc1058f6d32ece248adf30a21f9
   SwiftSpinner: 11c2c5ec7443d92f3026d3067ca8a91d4adef13f
   TextFieldEffects: 8e43fea8836e97be80fc4db27a1596c9e98a26ba

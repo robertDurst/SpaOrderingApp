@@ -14,6 +14,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PagingMenuController-PagingMenuController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PagingMenuController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,7 +52,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>527D5B6F089D7DC875993A373582F62C</key>
+		<key>23D4B5C9CC657B68134305BFEB076270</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4D9E0A800724E5B2D9CF036096ABD8CA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5BBB34170986C897E8931C1768FD6EE3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>645DAA43F1C3FE46F6E9C6ABB18EF6A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,17 +77,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>909F138A586DC4F9833B746F318AF340</key>
+		<key>B68E30D61A028F33BA762D313C9A41CE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9583D690A60DB9526A4EADDACA612A13</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EC3AE32E693E1D9AE6D502C8064CC03F</key>
+		<key>DF88D79863D6A447C3D1F5005A362E37</key>
 		<dict>
 			<key>primary</key>
 			<true/>
