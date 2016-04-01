@@ -30,6 +30,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         //Important Initializers
         let height = UIScreen.mainScreen().bounds.height
         let width = UIScreen.mainScreen().bounds.width
+        self.navigationItem.setHidesBackButton(true, animated:true)
         view.backgroundColor = .blueColor()
         
         //Create Title Image for Login Page

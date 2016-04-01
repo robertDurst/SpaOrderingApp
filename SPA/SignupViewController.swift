@@ -26,10 +26,11 @@ class SignupViewController: UIViewController, UITextFieldDelegate, STPPaymentCar
         let height = UIScreen.mainScreen().bounds.height
         let width = UIScreen.mainScreen().bounds.width
         view.backgroundColor = .blueColor()
+        self.navigationItem.setHidesBackButton(true, animated:true)
         self.title = "Signup"
         
         //Create the email signup Textfield
-        emailUser = YokoTextField(frame: CGRectMake(5, 70, width-10, height/5))
+        emailUser = YokoTextField(frame: CGRectMake(5, 155, width-10, height/5))
         emailUser.placeholder = "Colby Email Address"
         emailUser.font = UIFont.italicSystemFontOfSize(26)
         emailUser.textColor = .grayColor()
@@ -41,7 +42,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate, STPPaymentCar
         self.view.addSubview(emailUser)
         
         //Create the password signup Textfield
-        passwordUser = YokoTextField(frame: CGRectMake(5, 70+height/5+5, width-10, height/5))
+        passwordUser = YokoTextField(frame: CGRectMake(5, 160 + height/5, width-10, height/5))
         passwordUser.placeholder = "Password"
         passwordUser.font = UIFont.italicSystemFontOfSize(26)
         passwordUser.textColor = .grayColor()
@@ -54,7 +55,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate, STPPaymentCar
         self.view.addSubview(passwordUser)
         
         //Create the password confirm signup Textfield
-        confirmPassword = YokoTextField(frame: CGRectMake(5, 70+height*2/5+10, width-10, height/5))
+        confirmPassword = YokoTextField(frame: CGRectMake(5, 165 + height*2/5, width-10, height/5))
         confirmPassword.placeholder = "Cofirm Password"
         confirmPassword.font = UIFont.italicSystemFontOfSize(26)
         confirmPassword.textColor = .grayColor()
@@ -75,12 +76,12 @@ class SignupViewController: UIViewController, UITextFieldDelegate, STPPaymentCar
         signupButton.addTarget(self, action: "Signup:", forControlEvents: .TouchUpInside)
         self.view.addSubview(signupButton)
         
-       
-        //Create the background for the payment infor textfield
-        
+        //Create the cart button
+        let logoutButton = UIBarButtonItem(title: "< Return", style: .Plain, target: self, action: "Return")
+        self.navigationItem.leftBarButtonItem = logoutButton
         
         //All that is needed for the payment info textfield
-        paymentTextField.frame = CGRectMake(5, 70+height*3/5+15, CGRectGetWidth(self.view.frame) - 10, 80)
+        paymentTextField.frame = CGRectMake(5, 70, CGRectGetWidth(self.view.frame) - 10, 80)
         paymentTextField.backgroundColor = .grayColor()
         paymentTextField.textColor = .blackColor()
         paymentTextField.placeholderColor = .darkGrayColor()
@@ -233,11 +234,17 @@ class SignupViewController: UIViewController, UITextFieldDelegate, STPPaymentCar
     
     func textFieldDidBeginEditing(textField: UITextField) {
         if textField.isEqual(confirmPassword){
+            animateViewMoving(true, moveValue: 175)
+        }
+        else if textField.isEqual(passwordUser){
             animateViewMoving(true, moveValue: 75)
         }
     }
     func textFieldDidEndEditing(textField: UITextField) {
         if textField.isEqual(confirmPassword){
+            animateViewMoving(false, moveValue: 175)
+        }
+        else if textField.isEqual(passwordUser){
             animateViewMoving(false, moveValue: 75)
         }
     }
@@ -250,6 +257,11 @@ class SignupViewController: UIViewController, UITextFieldDelegate, STPPaymentCar
         UIView.setAnimationDuration(movementDuration )
         self.view.frame = CGRectOffset(self.view.frame, 0,  movement)
         UIView.commitAnimations()
+    }
+    
+    func Return(){
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("Login") as? LoginViewController
+        self.navigationController?.pushViewController(vc!, animated: true)
     }
     
     //To get the Stripe Token
