@@ -78,7 +78,29 @@ class MenuITemViewController: UIViewController, UIPickerViewDataSource, UIPicker
   
     //What happens when the upper right bar button is pressed
     func buyItem(sender: UIBarButtonItem){
-        orderCart.append([menuItem[0],menuItem[2],Quantity])
+        
+        //Testing if the type of food is already in order and acting based on that
+        var orderAlreadyThere = false
+        var counter = 0
+        for order in orderCart{
+            if menuItem[0] == order[0]{
+                let already = order[2]
+                let newToAdd = Quantity
+                let sum = Int(already)! + Int(newToAdd)!
+                orderCart[counter][2] = String(sum)
+                orderAlreadyThere = true
+            }
+            counter += 1
+        }
+        if orderAlreadyThere == false{
+            orderCart.append([menuItem[0],menuItem[2],Quantity])
+        }
+    
+        
+        for order in orderCart{
+            print(order)
+        }
+        
         let vc = self.storyboard?.instantiateViewControllerWithIdentifier("cart") as? CartTableViewController
         self.navigationController?.pushViewController(vc!, animated: true)
     }
@@ -102,6 +124,9 @@ class MenuITemViewController: UIViewController, UIPickerViewDataSource, UIPicker
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         Quantity = colors[row]
+        let price = Int(menuItem[2])
+        let sum = Int(Quantity)!*price!
+        itemPrice.text = "$\(sum)"
     }
 
 }

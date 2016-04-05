@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'FDAE0E877D448184CD7C5AE8'
-               BlueprintName = 'PagingMenuController-PagingMenuController'
+               BlueprintIdentifier = '8775A5ED93DE9D2A431E32E6'
+               BlueprintName = 'SimpleAlert'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'PagingMenuController.bundle'>
+               BuildableName = 'SimpleAlert.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

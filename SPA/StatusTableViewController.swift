@@ -18,7 +18,7 @@ class StatusTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Order Status"
+        self.title = "Your Orders"
         
         statusesOfOrders = manager3.fetchingFirstPage(currentUser.objectId)
         
@@ -80,7 +80,7 @@ class StatusTableViewController: UITableViewController {
                     as? StatusItemViewController{
                         let myIndexPath = self.tableView.indexPathForSelectedRow
                         let row = myIndexPath!.row
-                        detailViewController.orderStatus = statusesOfOrders[row][1]
+                        detailViewController.orderInfo = statusesOfOrders[row]
                         
                 }
                 

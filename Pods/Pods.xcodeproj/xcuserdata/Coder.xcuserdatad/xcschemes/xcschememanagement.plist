@@ -29,6 +29,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SimpleAlert.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Stripe.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,7 +62,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4D9E0A800724E5B2D9CF036096ABD8CA</key>
+		<key>54018EE50AC3E7F5844402EBC23B25F1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,22 +72,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>645DAA43F1C3FE46F6E9C6ABB18EF6A2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>72D57DED5129BDCAEB112D61B15B08A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B68E30D61A028F33BA762D313C9A41CE</key>
+		<key>816F54282E12C41128D74ECE56307FB7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DF88D79863D6A447C3D1F5005A362E37</key>
+		<key>8F7C70C96FA3E95BFD247695A2BCFB8B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE448BB4DB184D76820B697AB30E19AE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E047DFE7B364E88CAD1BFAD18A4F2DF8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

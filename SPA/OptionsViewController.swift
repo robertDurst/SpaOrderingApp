@@ -8,19 +8,56 @@
 
 import UIKit
 import MessageUI
+import SimpleAlert
 
 class OptionsViewController: UIViewController {
 
     var menuButton = UIButton()
     var settingsButton = UIButton()
     
+   
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         //Important Initializers
         let height = UIScreen.mainScreen().bounds.height
         let width = UIScreen.mainScreen().bounds.width
+        self.title = "Home"
         //self.navigationController?.navigationBarHidden = true
+        
+        //Create the toolbar
+        let toolbar = UIToolbar(frame: CGRectMake(0, height-50, width, 50))
+        toolbar.backgroundColor = UIColor(red: 0.75, green: 0.75, blue: 0.75, alpha: 0.95)
+        
+        //Create the home button
+        var btnName = UIButton()
+        btnName.setImage(UIImage(named: "Home"), forState: .Normal)
+        btnName.frame = CGRectMake(0, 0, 30, 30)
+        btnName.addTarget(self, action: Selector("ToHome"), forControlEvents: .TouchUpInside)
+        let acceptButton = UIBarButtonItem()
+        acceptButton.customView = btnName
+        
+        //Create the menu button
+        btnName = UIButton()
+        btnName.setImage(UIImage(named: "Menu"), forState: .Normal)
+        btnName.frame = CGRectMake(0, 0, 30, 30)
+        btnName.addTarget(self, action: Selector("ToMenu"), forControlEvents: .TouchUpInside)
+        let cancelButton = UIBarButtonItem()
+        cancelButton.customView = btnName
+        
+        //Create the cart button
+        btnName = UIButton()
+        btnName.setImage(UIImage(named: "Cart"), forState: .Normal)
+        btnName.frame = CGRectMake(0, 0, 30, 30)
+        btnName.addTarget(self, action: Selector("ToCart"), forControlEvents: .TouchUpInside)
+        let anotherButton = UIBarButtonItem()
+        anotherButton.customView = btnName
+        
+        //Initialize the toolbar with the array of buttons and flexible space things
+        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil);
+        toolbar.items = [acceptButton, flexibleSpace, cancelButton, flexibleSpace,anotherButton]
+        self.view.addSubview(toolbar)
         
         //Create the menu button
         menuButton = UIButton(frame: CGRectMake(0, 64, width, height/2-32))
@@ -32,8 +69,8 @@ class OptionsViewController: UIViewController {
         menuButton.addTarget(self, action: "returnToMenu", forControlEvents: .TouchUpInside)
         self.view.addSubview(menuButton)
         
-        //Create the Check Order button
-        settingsButton = UIButton(frame: CGRectMake(0, height/2+32, width, height/2-32))
+        //Create the Check Order Status button
+        settingsButton = UIButton(frame: CGRectMake(0, height/2+32, width, height/2-32-40))
         settingsButton.titleLabel!.font = UIFont(name: "Times New Roman", size: 30)
         settingsButton.setTitle("Check Order Status", forState: UIControlState.Normal)
         settingsButton.setTitleColor(.blueColor(), forState: UIControlState.Normal)
@@ -49,7 +86,7 @@ class OptionsViewController: UIViewController {
 
         
         //Create the settings button
-        let btnName = UIButton()
+        btnName = UIButton()
         btnName.setImage(UIImage(named: "settings"), forState: .Normal)
         btnName.frame = CGRectMake(0, 0, 30, 30)
         btnName.addTarget(self, action: Selector("Settings"), forControlEvents: .TouchUpInside)
@@ -122,24 +159,14 @@ class OptionsViewController: UIViewController {
         
     }
     
-    func ToOptions(){
-        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("options") as? OptionsViewController
+    func ToMenu(){
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("MenuTable") as? MenuTableViewController
         self.navigationController?.pushViewController(vc!, animated: true)
+        
     }
     
-    
-    override func viewWillAppear(animated: Bool) {
-        //Create Cart Button
-        let cartButton = UIBarButtonItem(title: "(Current Cart)", style: .Plain, target: self, action: "ToCart")
-        let optionButton = UIBarButtonItem(title: "Options", style: .Plain, target: self, action: "ToOptions")
-        self.setToolbarItems([cartButton], animated: false)
-        super.viewWillAppear(animated);
-        self.navigationController?.setToolbarHidden(false, animated: animated)
-    }
-    
-    override func viewWillDisappear(animated: Bool) {
-        super.viewWillDisappear(animated);
-        self.navigationController?.setToolbarHidden(true, animated: animated)
+    func ToHome(){
+        
     }
     
 

@@ -16,13 +16,14 @@ let currentUser = backendless.userService.currentUser
 
 class MenuTableViewController: UITableViewController {
     
-    
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated:true)
         self.title = "Menu"
+
+
         
         //Create the cart button
         let menuButton = UIBarButtonItem(title: "Cart", style: .Plain, target: self, action: "goToCart:")
@@ -88,13 +89,49 @@ class MenuTableViewController: UITableViewController {
         self.navigationController?.pushViewController(vc!, animated: true)
     }
     
+    func ToMenu(){
+        
+    }
+    
     
     override func viewWillAppear(animated: Bool) {
-        //Create Cart Button
-        let cartButton = UIBarButtonItem(title: "(Current Cart)", style: .Plain, target: self, action: "ToCart")
-        let optionButton = UIBarButtonItem(title: "(Options Menu)", style: .Plain, target: self, action: "ToOptions")
-        self.setToolbarItems([cartButton,optionButton], animated: false)
-        super.viewWillAppear(animated);
+        //Create the toolbar
+        let height = UIScreen.mainScreen().bounds.height
+        let width = UIScreen.mainScreen().bounds.width
+        
+        let toolbar = UIToolbar(frame: CGRectMake(0, height-50, width, 50))
+        toolbar.backgroundColor = UIColor(red: 0.75, green: 0.75, blue: 0.75, alpha: 0.95)
+        
+        //Create the home button
+        var btnName = UIButton()
+        btnName.setImage(UIImage(named: "Home"), forState: .Normal)
+        btnName.frame = CGRectMake(0, 0, 30, 30)
+        btnName.addTarget(self, action: Selector("ToOptions"), forControlEvents: .TouchUpInside)
+        let acceptButton = UIBarButtonItem()
+        acceptButton.customView = btnName
+        
+        //Create the menu button
+        btnName = UIButton()
+        btnName.setImage(UIImage(named: "Menu"), forState: .Normal)
+        btnName.frame = CGRectMake(0, 0, 30, 30)
+        btnName.addTarget(self, action: Selector("ToMenu"), forControlEvents: .TouchUpInside)
+        let cancelButton = UIBarButtonItem()
+        cancelButton.customView = btnName
+        
+        //Create the cart button
+        btnName = UIButton()
+        btnName.setImage(UIImage(named: "Cart"), forState: .Normal)
+        btnName.frame = CGRectMake(0, 0, 30, 30)
+        btnName.addTarget(self, action: Selector("ToCart"), forControlEvents: .TouchUpInside)
+        let anotherButton = UIBarButtonItem()
+        anotherButton.customView = btnName
+        
+        //Initialize the toolbar with the array of buttons and flexible space things
+        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil);
+        toolbar.items = [acceptButton, flexibleSpace, cancelButton, flexibleSpace,anotherButton]
+        self.view.addSubview(toolbar)
+        self.setToolbarItems([acceptButton, flexibleSpace, cancelButton, flexibleSpace,anotherButton]
+, animated: false)
         self.navigationController?.setToolbarHidden(false, animated: animated)
     }
     
@@ -102,5 +139,7 @@ class MenuTableViewController: UITableViewController {
         super.viewWillDisappear(animated);
         self.navigationController?.setToolbarHidden(true, animated: animated)
     }
+    
+    
 
 }

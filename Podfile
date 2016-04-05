@@ -8,3 +8,4 @@ pod “JSSAlertView”
 pod 'Stripe'
 pod 'PageMenu'
 pod "PagingMenuController"
+pod “SimpleAlert”
