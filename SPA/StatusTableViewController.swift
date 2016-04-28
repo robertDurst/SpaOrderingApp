@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftSpinner
 
 let manager3 = StatusChecker()
 var statusesOfOrders = manager3.fetchingFirstPage(currentUser.objectId)
@@ -22,11 +23,16 @@ class StatusTableViewController: UITableViewController {
         
         statusesOfOrders = manager3.fetchingFirstPage(currentUser.objectId)
         
-        self.refreshControl = UIRefreshControl()
-        self.refreshControl!.attributedTitle = NSAttributedString(string: "Pull to refresh")
-        self.refreshControl!.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
-        //self.tableView.addSubview(self.refreshControl!) // not required when using UITableViewController
-
+        //Create the refresh button
+        let btnName = UIButton()
+        btnName.setImage(UIImage(named: "Refresh"), forState: .Normal)
+        btnName.frame = CGRectMake(0, 0, 30, 30)
+        btnName.addTarget(self, action: Selector("refresh:"), forControlEvents: .TouchUpInside)
+        
+        //.... Set Right/Left Bar Button item
+        let rightBarButton = UIBarButtonItem()
+        rightBarButton.customView = btnName
+        self.navigationItem.rightBarButtonItem = rightBarButton
 
 
         // Uncomment the following line to preserve selection between presentations
@@ -68,10 +74,21 @@ class StatusTableViewController: UITableViewController {
     
     func refresh(sender:AnyObject)
     {
+        SwiftSpinner.show("Refreshing")
+        let seconds = 1.0
+        let delay = seconds * Double(NSEC_PER_SEC)  // nanoseconds per seconds
+        let dispatchTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
+        
+        dispatch_after(dispatchTime, dispatch_get_main_queue(), {
+            
+            SwiftSpinner.hide()
+
+            
+        })
+
         statusesOfOrders = manager3.fetchingFirstPage(currentUser.objectId)
         self.tableView.reloadData()
-        self.refreshControl!.endRefreshing()
-    }
+            }
     
     override func prepareForSegue(segue: UIStoryboardSegue,
         sender: AnyObject?) {
@@ -81,7 +98,7 @@ class StatusTableViewController: UITableViewController {
                         let myIndexPath = self.tableView.indexPathForSelectedRow
                         let row = myIndexPath!.row
                         detailViewController.orderInfo = statusesOfOrders[row]
-                        
+                        detailViewController.theCurrentOrderPlaceInArray = row
                 }
                 
                 

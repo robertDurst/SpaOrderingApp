@@ -22,9 +22,8 @@ class MenuTableViewController: UITableViewController {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated:true)
         self.title = "Menu"
+        tableView.tableFooterView = UIView()
 
-
-        
         //Create the cart button
         let menuButton = UIBarButtonItem(title: "Cart", style: .Plain, target: self, action: "goToCart:")
         //self.navigationItem.rightBarButtonItem = menuButton
@@ -55,6 +54,8 @@ class MenuTableViewController: UITableViewController {
         
         let row = indexPath.row
         cell.menuLabel.text = menu[row][0]
+        let imageName = menu[row][0]
+        cell.menuImage.image = UIImage(named: imageName)
         return cell
     }
     
@@ -71,6 +72,7 @@ class MenuTableViewController: UITableViewController {
                         let myIndexPath = self.tableView.indexPathForSelectedRow
                         let row = myIndexPath!.row
                         detailViewController.menuItem = menu[row]
+                
                         
                 }
                 
@@ -105,7 +107,7 @@ class MenuTableViewController: UITableViewController {
         //Create the home button
         var btnName = UIButton()
         btnName.setImage(UIImage(named: "Home"), forState: .Normal)
-        btnName.frame = CGRectMake(0, 0, 30, 30)
+        btnName.frame = CGRectMake(0, 0, 100, 45)
         btnName.addTarget(self, action: Selector("ToOptions"), forControlEvents: .TouchUpInside)
         let acceptButton = UIBarButtonItem()
         acceptButton.customView = btnName
@@ -113,15 +115,16 @@ class MenuTableViewController: UITableViewController {
         //Create the menu button
         btnName = UIButton()
         btnName.setImage(UIImage(named: "Menu"), forState: .Normal)
-        btnName.frame = CGRectMake(0, 0, 30, 30)
+        btnName.frame = CGRectMake(0, 0, 100, 45)
         btnName.addTarget(self, action: Selector("ToMenu"), forControlEvents: .TouchUpInside)
+        btnName.backgroundColor = .greenColor()
         let cancelButton = UIBarButtonItem()
         cancelButton.customView = btnName
         
         //Create the cart button
         btnName = UIButton()
         btnName.setImage(UIImage(named: "Cart"), forState: .Normal)
-        btnName.frame = CGRectMake(0, 0, 30, 30)
+        btnName.frame = CGRectMake(0, 0, 100, 45)
         btnName.addTarget(self, action: Selector("ToCart"), forControlEvents: .TouchUpInside)
         let anotherButton = UIBarButtonItem()
         anotherButton.customView = btnName

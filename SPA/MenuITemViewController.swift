@@ -17,6 +17,7 @@ class MenuITemViewController: UIViewController, UIPickerViewDataSource, UIPicker
     var colors = ["1","2","3","4","5"] //For the view picker
     var menuItem:[String] = []
     var Quantity = "1"
+    var imageView = UIImageView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,45 +27,55 @@ class MenuITemViewController: UIViewController, UIPickerViewDataSource, UIPicker
         let width = UIScreen.mainScreen().bounds.width
         view.backgroundColor = .grayColor()
         
+        //Create Title Image for Login Page
+        let imageName = String(menuItem[0]) 
+        let image = UIImage(named: imageName)
+        imageView = UIImageView(image: image!)
+        // imageView.frame = CGRect(x: 5, y: 70, width: width-10, height: height-310)
+        imageView.frame = CGRect(x: 0, y:  70+height/10+20 + height/8, width: width, height: height*8/10-(70+height/10+5 + height/6-20))
+        view.addSubview(imageView)
         
         //Create label for the item name
-        itemName = UILabel(frame: CGRectMake(5, 70, width-10, height/5))
+        itemName = UILabel(frame: CGRectMake(5, 70, width-10, height/10))
         itemName.backgroundColor = .blueColor()
         itemName.textColor = .whiteColor()
         itemName.text = menuItem[0]
-        itemName.font = UIFont(name: "Times New Roman", size: 30)
+        itemName.font = UIFont(name: "Helvetica", size: 25)
         itemName.textAlignment = .Center
         self.view.addSubview(itemName)
         
         //Create label for the item Description
-        itemDescription = UITextView(frame: CGRectMake(5, 70+height/5+25, width-10, height/5))
+        itemDescription = UITextView(frame: CGRectMake(5, 70+height/10+5, width-10, height/8+10))
         itemDescription.backgroundColor = .grayColor()
         itemDescription.textColor = .blackColor()
         itemDescription.text = menuItem[1]
-        itemDescription.font = UIFont(name: "Times New Roman", size: 16)
+        itemDescription.font = UIFont(name: "Helvetica", size: 16)
         itemDescription.textAlignment = .Center
+        itemDescription.editable = false
+        itemDescription.userInteractionEnabled = false
         self.view.addSubview(itemDescription)
         
         //Create label for the item price
         itemPrice = UILabel(frame: CGRectMake(width/2, height*8/10, width/2-5, height/10))
-        itemPrice.backgroundColor = .grayColor()
+        itemPrice.backgroundColor = .clearColor()
         itemPrice.textColor = .blackColor()
         itemPrice.text = "$\(menuItem[2])"
-        itemPrice.font = UIFont(name: "Times New Roman", size: 20)
+        itemPrice.font = UIFont(name: "Helvetica", size: 20)
         itemPrice.textAlignment = .Right
         self.view.addSubview(itemPrice)
         
         //Create label for the item price per Quantity
         itemPricePerQuantity = UILabel(frame: CGRectMake(5, height*8/10, width/2-5, height/10))
-        itemPricePerQuantity.backgroundColor = .grayColor()
+        itemPricePerQuantity.backgroundColor = .clearColor()
         itemPricePerQuantity.textColor = .blackColor()
         itemPricePerQuantity.text = "Price:"
-        itemPricePerQuantity.font = UIFont(name: "Times New Roman", size: 20)
+        itemPricePerQuantity.font = UIFont(name: "Helvetica", size: 20)
         itemPricePerQuantity.textAlignment = .Left
         self.view.addSubview(itemPricePerQuantity)
         
         //Create the picker for the quantity selection
-        pickerView = UIPickerView(frame: CGRectMake(5,height*8/10+5, width-10, height/5-5))
+        pickerView = UIPickerView(frame: CGRectMake(5,height*9/10, width-10, height/10-5))
+        pickerView.backgroundColor = .blueColor()
         self.pickerView.dataSource = self;
         self.pickerView.delegate = self;
         self.view.addSubview(pickerView)
@@ -124,8 +135,8 @@ class MenuITemViewController: UIViewController, UIPickerViewDataSource, UIPicker
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         Quantity = colors[row]
-        let price = Int(menuItem[2])
-        let sum = Int(Quantity)!*price!
+        let price = Double(menuItem[2])
+        let sum = Double(Quantity)!*price!
         itemPrice.text = "$\(sum)"
     }
 

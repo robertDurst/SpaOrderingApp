@@ -20,7 +20,7 @@ class CartTableViewController: UITableViewController {
         self.title = "Cart"
         self.navigationItem.setHidesBackButton(true, animated: false)
         navigationItem.leftBarButtonItem = editButtonItem()
-        self.view.backgroundColor = .grayColor()
+        self.view.backgroundColor = .blackColor()
             
         //Create the menu back button
         let menuButton = UIBarButtonItem(title: "< Menu", style: .Plain, target: self, action: "returnToMenu:")
@@ -44,7 +44,7 @@ class CartTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-        cell.backgroundColor = UIColor.grayColor()
+        cell.backgroundColor = UIColor.blackColor()
     }
 
     // MARK: - Table view data source
@@ -74,12 +74,15 @@ class CartTableViewController: UITableViewController {
         
         let row = indexPath.row
         
+        cell.cartLabel.textColor = .whiteColor()
+        cell.cartQuantityLabel.textColor = .whiteColor()
+        
         if row < orderCart.count{
             cell.cartLabel.text = orderCart[row][0]
             cell.cartQuantityLabel.text = "Quantity: \(orderCart[row][2])"
         }
         else{
-            cell.cartLabel.text = "Price: $\(price)0"
+            cell.cartLabel.text = "Price: $\(price)"
             cell.cartQuantityLabel.text = ""
         }
         
@@ -166,7 +169,7 @@ class CartTableViewController: UITableViewController {
         //Create the home button
         var btnName = UIButton()
         btnName.setImage(UIImage(named: "Home"), forState: .Normal)
-        btnName.frame = CGRectMake(0, 0, 30, 30)
+        btnName.frame = CGRectMake(0, 0, 100, 45)
         btnName.addTarget(self, action: Selector("ToOptions"), forControlEvents: .TouchUpInside)
         let acceptButton = UIBarButtonItem()
         acceptButton.customView = btnName
@@ -174,7 +177,7 @@ class CartTableViewController: UITableViewController {
         //Create the menu button
         btnName = UIButton()
         btnName.setImage(UIImage(named: "Menu"), forState: .Normal)
-        btnName.frame = CGRectMake(0, 0, 30, 30)
+        btnName.frame = CGRectMake(0, 0, 100, 45)
         btnName.addTarget(self, action: Selector("ToMenu"), forControlEvents: .TouchUpInside)
         let cancelButton = UIBarButtonItem()
         cancelButton.customView = btnName
@@ -182,8 +185,9 @@ class CartTableViewController: UITableViewController {
         //Create the cart button
         btnName = UIButton()
         btnName.setImage(UIImage(named: "Cart"), forState: .Normal)
-        btnName.frame = CGRectMake(0, 0, 30, 30)
+        btnName.frame = CGRectMake(0, 0, 100, 45)
         btnName.addTarget(self, action: Selector("ToCart"), forControlEvents: .TouchUpInside)
+        btnName.backgroundColor = .greenColor()
         let anotherButton = UIBarButtonItem()
         anotherButton.customView = btnName
         

@@ -18,6 +18,8 @@ class SignupViewController: UIViewController, UITextFieldDelegate, STPPaymentCar
     var signupButton = UIButton()
     let tapRecKeyBoardHider = UITapGestureRecognizer()
     let paymentTextField = STPPaymentCardTextField()
+    var hasPunctuation = false
+    var hasNumber = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,12 +31,16 @@ class SignupViewController: UIViewController, UITextFieldDelegate, STPPaymentCar
         self.navigationItem.setHidesBackButton(true, animated:true)
         self.title = "Signup"
         
+        //Add Info Button
+        let infoButton = UIBarButtonItem(title: "Help", style: .Plain, target: self, action: "signUpInfo")
+        self.navigationItem.rightBarButtonItem = infoButton
+        
         //Create the email signup Textfield
         emailUser = YokoTextField(frame: CGRectMake(5, 155, width-10, height/5))
         emailUser.placeholder = "Colby Email Address"
         emailUser.font = UIFont.italicSystemFontOfSize(26)
-        emailUser.textColor = .grayColor()
-        emailUser.backgroundColor = .grayColor()
+        emailUser.textColor = .whiteColor()
+        emailUser.backgroundColor = .whiteColor()
         emailUser.layer.cornerRadius = 10
         emailUser.autocorrectionType = .No
         emailUser.autocapitalizationType = .None
@@ -69,7 +75,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate, STPPaymentCar
         
         //Create the signup button
         signupButton = UIButton(frame: CGRectMake(5, 70+height*3/5+50 + height/10, width-10, 35))
-        signupButton.titleLabel!.font = UIFont(name: "Times New Roman", size: 40)
+        signupButton.titleLabel!.font = UIFont(name: "Helvetica", size: 40)
         signupButton.setTitle("Signup", forState: UIControlState.Normal)
         signupButton.setTitleColor(.grayColor(), forState: UIControlState.Normal)
         signupButton.userInteractionEnabled = true
@@ -113,6 +119,8 @@ class SignupViewController: UIViewController, UITextFieldDelegate, STPPaymentCar
     
     //What happens when you hit the signup button - you try to create an account. If successful, return to the login page.
     func Signup(sender: UIButton){
+        hasPunctuation = false
+        hasNumber = false
         let str = String(emailUser.text)
         var length = str.characters.count
         if length >= 22{
@@ -124,37 +132,93 @@ class SignupViewController: UIViewController, UITextFieldDelegate, STPPaymentCar
             
             
             if substring2 == "@colby.edu" {
-                if passwordUser.text?.characters.count > 5{
-                    if passwordUser.text == confirmPassword.text{
-                        SwiftSpinner.show("Confirming")
-                        registerUserAsync()
+                //Here I work on adhering to the Colby Password requirements
+                
+                if passwordUser.text?.characters.count > 7{
+                    if passwordUser.text?.characters.count < 31{
+                        for char in (passwordUser.text?.characters)!{
+                            
+                            if char == "!" || char == "?" || char == "." || char == "," || char == "@" || char == "%"{
+                                hasPunctuation = true
+                                
+                                for char in (passwordUser.text?.characters)!{
+                                    if char == "1" || char == "2" || char == "3" || char == "4" || char == "5" || char == "6" || char == "7" || char == "8" || char == "9" || char == "0"{
+                                        hasNumber = true
+                                    
+                                }
+                            }
+                            
+}
+                    
                     }
+                        if hasNumber == true{
+                            
+                            if hasPunctuation{
+                
+                        if passwordUser.text == confirmPassword.text{
+                            
+                            //SwiftSpinner.show("Confirming")
+                            // registerUserAsync()
+                        }
+                        else{
+                            SwiftSpinner.show("Confirming")
+                            SwiftSpinner.hide()
+                            JSSAlertView().show(
+                                self,
+                                title: "Error",
+                                text: "Passwords Do Not Match",
+                                buttonText: "OK",
+                                color: UIColor.redColor()
+                            )
+                                }}
+                        else{
+                                SwiftSpinner.show("Confirming")
+                                SwiftSpinner.hide()
+                                JSSAlertView().show(
+                                    self,
+                                    title: "Error",
+                                    text: "Must have Punctuation",
+                                    buttonText: "OK",
+                                    color: UIColor.redColor()
+                                )
+                            }}
                     else{
+                            SwiftSpinner.show("Confirming")
+                            SwiftSpinner.hide()
+                            JSSAlertView().show(
+                                self,
+                                title: "Error",
+                                text: "Must have Number and Punctuation",
+                                buttonText: "OK",
+                                color: UIColor.redColor()
+                            )
+                        }}
+                    else {
                         SwiftSpinner.show("Confirming")
                         SwiftSpinner.hide()
                         JSSAlertView().show(
                             self,
                             title: "Error",
-                            text: "Passwords Do Not Match",
+                            text: "Please Enter a Valid Password Shorter Than 31 Characters",
                             buttonText: "OK",
                             color: UIColor.redColor()
                         )
-                    }
-                }
+                        }}
+                
                 else{
                     SwiftSpinner.show("Confirming")
                     SwiftSpinner.hide()
                     JSSAlertView().show(
                         self,
                         title: "Error",
-                        text: "Please Enter a Valid Password Longer Than 5 Characters",
+                        text: "Please Enter a Valid Password Longer Than 7 Characters",
                         buttonText: "OK",
                         color: UIColor.redColor()
                     )
-                }
+                }}
             
     
-        }
+        
             else{
                 SwiftSpinner.show("Confirming")
                 SwiftSpinner.hide()
@@ -165,8 +229,8 @@ class SignupViewController: UIViewController, UITextFieldDelegate, STPPaymentCar
                     buttonText: "OK",
                     color: UIColor.redColor()
                 )
-            }
-        }
+            }}
+        
         else{
         SwiftSpinner.show("Confirming")
         SwiftSpinner.hide()
@@ -261,6 +325,11 @@ class SignupViewController: UIViewController, UITextFieldDelegate, STPPaymentCar
     
     func Return(){
         let vc = self.storyboard?.instantiateViewControllerWithIdentifier("Login") as? LoginViewController
+        self.navigationController?.pushViewController(vc!, animated: true)
+    }
+    
+    func signUpInfo(){
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("signupHelp") as? SingupHelpViewController
         self.navigationController?.pushViewController(vc!, animated: true)
     }
     

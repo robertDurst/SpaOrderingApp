@@ -36,6 +36,7 @@
 		DC5D21871CAF0625008C6A63 /* StatusItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5D21861CAF0625008C6A63 /* StatusItemViewController.swift */; };
 		DCA3CC381C698DD8008D0E4E /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA3CC371C698DD7008D0E4E /* CheckoutViewController.swift */; };
 		DCA3CC3C1C6BCBE9008D0E4E /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA3CC3B1C6BCBE9008D0E4E /* OptionsViewController.swift */; };
+		DCBF57AA1CC02F6B00D9E246 /* SingupHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBF57A91CC02F6B00D9E246 /* SingupHelpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		DC5D21861CAF0625008C6A63 /* StatusItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusItemViewController.swift; sourceTree = "<group>"; };
 		DCA3CC371C698DD7008D0E4E /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		DCA3CC3B1C6BCBE9008D0E4E /* OptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
+		DCBF57A91CC02F6B00D9E246 /* SingupHelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingupHelpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				DC5D217E1CAEE46B008C6A63 /* toCharge.swift */,
 				DC5D217C1CAEE250008C6A63 /* toApprove.swift */,
 				DC5322811C604BD4007049DC /* Main.storyboard */,
+				DCBF57A91CC02F6B00D9E246 /* SingupHelpViewController.swift */,
 				DC5D21861CAF0625008C6A63 /* StatusItemViewController.swift */,
 				DC5D21701CAED9F5008C6A63 /* StatusTableViewController.swift */,
 				DC5D216C1CAE26ED008C6A63 /* BaseViewController.swift */,
@@ -301,6 +304,7 @@
 				DC5322AA1C616A63007049DC /* CartTableViewController.swift in Sources */,
 				DC398D571C98F57500E0659A /* SettingsViewController.swift in Sources */,
 				DC4137711C630854009FE9B8 /* CartTableViewCell.swift in Sources */,
+				DCBF57AA1CC02F6B00D9E246 /* SingupHelpViewController.swift in Sources */,
 				DC53229A1C608BA5007049DC /* JSSAlertView.swift in Sources */,
 				DC5322A21C6153D8007049DC /* MenuITemViewController.swift in Sources */,
 				DC53229E1C614388007049DC /* menu.swift in Sources */,
@@ -418,6 +422,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				INFOPLIST_FILE = SPA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SPA/Sodium",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.robertdurst.SPA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -430,6 +438,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				INFOPLIST_FILE = SPA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SPA/Sodium",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.robertdurst.SPA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

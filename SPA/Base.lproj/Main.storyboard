@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QXR-lb-hZI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="laa-Hd-jqI">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -43,14 +43,18 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SiB-O2-NAu">
-                                            <rect key="frame" x="8" y="11" width="584" height="21"/>
+                                            <rect key="frame" x="63" y="11" width="529" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lA4-mQ-tHH">
+                                            <rect key="frame" x="8" y="0.0" width="47" height="35"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="menuImage" destination="lA4-mQ-tHH" id="dDf-jE-wCN"/>
                                     <outlet property="menuLabel" destination="SiB-O2-NAu" id="HFo-YN-Fyw"/>
                                     <segue destination="I1u-PD-sB1" kind="show" identifier="menuToItem" id="xL1-TU-mfJ"/>
                                 </connections>
@@ -148,6 +152,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KNx-6R-cdE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7371" y="1038"/>
+        </scene>
+        <!--signupHelp-->
+        <scene sceneID="WJB-bJ-saV">
+            <objects>
+                <viewController storyboardIdentifier="signupHelp" title="signupHelp" id="qOo-H5-hSf" customClass="SingupHelpViewController" customModule="SPA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C2Z-Ib-4Gy"/>
+                        <viewControllerLayoutGuide type="bottom" id="eYz-4e-Ui4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HTR-lr-tKX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZOa-7R-oZG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="901" y="1874"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="GvQ-Lo-bXy">
@@ -341,128 +363,5 @@
             </objects>
             <point key="canvasLocation" x="3325" y="1350"/>
         </scene>
-        <!--UIToolbar-->
-        <scene sceneID="bsU-d4-1pV">
-            <objects>
-                <viewController id="rYd-Sc-r7Q" customClass="ViewController" customModule="SPA" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="D3v-wj-asN"/>
-                        <viewControllerLayoutGuide type="bottom" id="oDY-bi-XuL"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="2ve-D4-5ap">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0AJ-MN-Cj8">
-                                <rect key="frame" x="29" y="390" width="600" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="P4J-bO-mdQ"/>
-                                </constraints>
-                                <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="gv2-JU-PxU"/>
-                                    <barButtonItem systemItem="camera" id="8hX-na-y0G">
-                                        <connections>
-                                            <action selector="rewindButtonAction:" destination="rYd-Sc-r7Q" id="SbE-Su-WGn"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="wfK-t9-Gsp"/>
-                                    <barButtonItem systemItem="play" id="Rym-2x-w09">
-                                        <connections>
-                                            <action selector="playButtonAction:" destination="rYd-Sc-r7Q" id="W6V-4J-Jra"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="yjM-U3-eki"/>
-                                    <barButtonItem systemItem="pause" id="jJN-FG-WjJ">
-                                        <connections>
-                                            <action selector="pauseButtonAction:" destination="rYd-Sc-r7Q" id="fDX-rQ-7Wu"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="aJn-Jc-oca"/>
-                                    <barButtonItem systemItem="fastForward" id="2uN-oe-wCU">
-                                        <connections>
-                                            <action selector="forwardButtonAction:" destination="rYd-Sc-r7Q" id="bGE-3I-ljk"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="SuQ-s0-kJR"/>
-                                </items>
-                            </toolbar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LvE-1i-ILN">
-                                <rect key="frame" x="225" y="235" width="150" height="30"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="JMu-xP-tnD"/>
-                                    <constraint firstAttribute="height" constant="30" id="eUI-61-VQT"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Toggle Toolbar"/>
-                                <connections>
-                                    <action selector="toggleButtonAction:" destination="rYd-Sc-r7Q" eventType="touchUpInside" id="Uqu-Kb-cKy"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="5w4-RZ-GVc">
-                                <rect key="frame" x="20" y="275" width="560" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Vx5-7P-lfw"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="40"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W0b-da-LUr">
-                                <rect key="frame" x="54" y="530" width="600" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="3Ef-Ge-jH2"/>
-                                    <constraint firstAttribute="height" constant="44" id="mNI-85-oy7"/>
-                                </constraints>
-                                <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="r3l-S9-OkS"/>
-                                    <barButtonItem enabled="NO" image="Home" id="IwG-j0-FN9">
-                                        <connections>
-                                            <action selector="goHome:" destination="Tsx-cJ-7Ik" id="6lK-eN-jFd"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="xQD-0a-0xw"/>
-                                    <barButtonItem image="Menu" id="zvS-wg-o07">
-                                        <connections>
-                                            <action selector="goToMenu:" destination="Tsx-cJ-7Ik" id="qVQ-UK-XBN"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="CGa-KH-AfG"/>
-                                    <barButtonItem image="Cart" id="PiM-Gv-2EE">
-                                        <connections>
-                                            <action selector="goToCart:" destination="Tsx-cJ-7Ik" id="EAp-nV-dEg"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="zle-PA-itR"/>
-                                </items>
-                            </toolbar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="5w4-RZ-GVc" firstAttribute="centerY" secondItem="2ve-D4-5ap" secondAttribute="centerY" id="4Fm-gu-q8i"/>
-                            <constraint firstItem="LvE-1i-ILN" firstAttribute="centerX" secondItem="2ve-D4-5ap" secondAttribute="centerX" id="8Wp-51-LpS"/>
-                            <constraint firstAttribute="trailing" secondItem="5w4-RZ-GVc" secondAttribute="trailing" constant="20" id="Geo-Rj-Iqj"/>
-                            <constraint firstItem="LvE-1i-ILN" firstAttribute="centerY" secondItem="2ve-D4-5ap" secondAttribute="centerY" constant="-50" id="ONJ-7x-FxM"/>
-                            <constraint firstItem="oDY-bi-XuL" firstAttribute="top" secondItem="0AJ-MN-Cj8" secondAttribute="bottom" id="bfd-BU-OzH"/>
-                            <constraint firstItem="5w4-RZ-GVc" firstAttribute="leading" secondItem="2ve-D4-5ap" secondAttribute="leading" constant="20" id="ob0-kd-ORT"/>
-                            <constraint firstItem="0AJ-MN-Cj8" firstAttribute="leading" secondItem="2ve-D4-5ap" secondAttribute="leading" id="sAR-35-fMd"/>
-                            <constraint firstAttribute="trailing" secondItem="0AJ-MN-Cj8" secondAttribute="trailing" id="xZN-ni-3sx"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="UIToolbar" id="w7T-bc-tl7"/>
-                    <connections>
-                        <outlet property="debugLabel" destination="5w4-RZ-GVc" id="QoF-bn-RfQ"/>
-                        <outlet property="toolbar" destination="0AJ-MN-Cj8" id="iOs-BY-2V5"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="K9k-rM-12u" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="678" y="2283"/>
-        </scene>
     </scenes>
-    <resources>
-        <image name="Cart" width="25" height="25"/>
-        <image name="Home" width="25" height="25"/>
-        <image name="Menu" width="25" height="25"/>
-    </resources>
 </document>
