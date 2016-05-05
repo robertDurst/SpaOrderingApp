@@ -20,6 +20,7 @@ class CartTableViewController: UITableViewController {
         self.title = "Cart"
         self.navigationItem.setHidesBackButton(true, animated: false)
         navigationItem.leftBarButtonItem = editButtonItem()
+        tableView.tableFooterView = UIView()
         self.view.backgroundColor = .blackColor()
             
         //Create the menu back button

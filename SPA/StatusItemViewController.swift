@@ -99,14 +99,20 @@ class StatusItemViewController: UIViewController {
         }
         else if orderInfo[1] as! String == "Charging"{
             progressLabelCharging?.backgroundColor = .greenColor()
+            progressLabelApproving?.backgroundColor = .greenColor()
             progressToSet = 0.5
         }
         else if orderInfo[1] as! String == "Cooking"{
             progressLabelCooking?.backgroundColor = .greenColor()
+            progressLabelCharging?.backgroundColor = .greenColor()
+            progressLabelApproving?.backgroundColor = .greenColor()
             progressToSet = 0.75
         }
         else{
             progressLabelPickup?.backgroundColor = .greenColor()
+            progressLabelCooking?.backgroundColor = .greenColor()
+            progressLabelCharging?.backgroundColor = .greenColor()
+            progressLabelApproving?.backgroundColor = .greenColor()
             progressToSet = 1
         }
         
@@ -214,7 +220,7 @@ class StatusItemViewController: UIViewController {
         let lineLabel = UILabel(frame: CGRectMake(0, CGFloat(275+30*stepper), width, 30))
         lineLabel.text = "__________________________________________"
         lineLabel.textAlignment = .Center
-        lineLabel.font = UIFont(name: "Times New Roman", size: 14)
+        lineLabel.font = UIFont(name: "Helvetica", size: 14)
         self.view.addSubview(lineLabel)
         
         stepper += 1

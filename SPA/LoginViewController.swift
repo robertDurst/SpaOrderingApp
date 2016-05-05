@@ -376,8 +376,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate, STPPaymentCard
                                 
                                 if passwordUser.text == confirmPassword.text{
                                     
-                                    //SwiftSpinner.show("Confirming")
-                                    // registerUserAsync()
+                                    SwiftSpinner.show("Confirming")
+                                    registerUserAsync()
                                 }
                                 else{
                                     SwiftSpinner.show("Confirming")
